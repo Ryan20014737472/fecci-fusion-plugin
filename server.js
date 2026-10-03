@@ -8,7 +8,7 @@ async function main() {
   await once(httpServer, 'listening');
 
   const hostname = config.host.includes(':') ? `[${config.host}]` : config.host;
-  console.log(`FECCI Fusion 360 MCP disponível em http://${hostname}:${config.port}/mcp`);
+  console.log(`FECCI Fusion 360 MCP escutando em http://${hostname}:${config.port}/mcp`);
 
   let stopping = false;
   function shutdown() {

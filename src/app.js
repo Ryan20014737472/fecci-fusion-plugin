@@ -27,6 +27,16 @@ export function createApp({
     }
     next();
   });
+
+  // Liveness apenas: não retorna configuração, versões, logs ou dados do projeto.
+  app.get('/health', (_req, res) => {
+    res.set('Cache-Control', 'no-store').status(200).json({ status: 'ok' });
+  });
+  app.all('/health', (_req, res) => {
+    res.set('Allow', 'GET, HEAD');
+    rpcError(res, 405, -32000, 'Método não permitido. Use GET no endpoint /health.');
+  });
+
   app.use(express.json({ limit: '64kb' }));
 
   app.post('/mcp', async (req, res) => {
