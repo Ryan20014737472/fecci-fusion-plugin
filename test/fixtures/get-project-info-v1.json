@@ -1,0 +1,306 @@
+{
+  "tool": {
+    "name": "get_project_info",
+    "title": "Informações gerais do Projeto FECCI",
+    "description": "Retorna nome, descrição, áreas abordadas, site oficial e informações públicas sobre o Projeto FECCI, seu minicurso e o estágio dos resultados. Inclui fontes e a data da consulta ao site. Não recebe argumentos e não altera dados.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {},
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "additionalProperties": false
+    },
+    "outputSchema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Nome exibido no site oficial."
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Título completo do projeto no site."
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "areas": {
+          "minItems": 1,
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "official_site_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "public_information": {
+          "type": "object",
+          "properties": {
+            "edition": {
+              "type": "integer",
+              "minimum": -9007199254740991,
+              "maximum": 9007199254740991
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "objective": {
+              "type": "string",
+              "minLength": 1
+            },
+            "workshop": {
+              "type": "object",
+              "properties": {
+                "duration_minutes": {
+                  "type": "integer",
+                  "exclusiveMinimum": 0,
+                  "maximum": 9007199254740991
+                },
+                "target_audience": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "status": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "software": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "practical_activity": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "topics": {
+                  "minItems": 1,
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              },
+              "required": [
+                "duration_minutes",
+                "target_audience",
+                "status",
+                "software",
+                "practical_activity",
+                "topics"
+              ],
+              "additionalProperties": false
+            },
+            "support_material": {
+              "type": "object",
+              "properties": {
+                "description": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "url": {
+                  "type": "string",
+                  "format": "uri"
+                }
+              },
+              "required": [
+                "description",
+                "url"
+              ],
+              "additionalProperties": false
+            },
+            "results": {
+              "type": "object",
+              "properties": {
+                "completed_stage": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "available_evidence": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "quantitative_results_status": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "next_stage": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "completed_stage",
+                "available_evidence",
+                "quantitative_results_status",
+                "next_stage"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "edition",
+            "context",
+            "objective",
+            "workshop",
+            "support_material",
+            "results"
+          ],
+          "additionalProperties": false
+        },
+        "source_checked_at": {
+          "type": "string",
+          "format": "date",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))$",
+          "description": "Data da verificação do site; não é uma consulta em tempo real."
+        },
+        "sources": {
+          "minItems": 1,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "section": {
+                "type": "string",
+                "minLength": 1
+              },
+              "url": {
+                "type": "string",
+                "format": "uri"
+              }
+            },
+            "required": [
+              "section",
+              "url"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "name",
+        "title",
+        "description",
+        "areas",
+        "official_site_url",
+        "public_information",
+        "source_checked_at",
+        "sources"
+      ],
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "additionalProperties": false
+    },
+    "annotations": {
+      "readOnlyHint": true,
+      "destructiveHint": false,
+      "idempotentHint": true,
+      "openWorldHint": false
+    },
+    "execution": {
+      "taskSupport": "forbidden"
+    }
+  },
+  "success": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"name\": \"Projeto FECCI\",\n  \"title\": \"Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360\",\n  \"description\": \"Projeto desenvolvido no Clube Maker CEP para aproximar estudantes do primeiro ano do Ensino Médio da Cultura Maker e das áreas STEAM. Apresenta o Autodesk Fusion 360 de forma simples, prática e acessível por meio de uma oficina introdutória de modelagem paramétrica de um parafuso e uma porca, com material de apoio e uma plataforma digital para revisão e continuidade da prática.\",\n  \"areas\": [\n    \"Autodesk Fusion 360\",\n    \"Modelagem 3D e CAD\",\n    \"Modelagem paramétrica\",\n    \"Prototipagem 3D\",\n    \"Educação e aprendizagem prática\",\n    \"STEAM\",\n    \"Cultura Maker\",\n    \"Visualização espacial\"\n  ],\n  \"official_site_url\": \"https://ryan20014737472.github.io/Fecci-fusion-360/\",\n  \"public_information\": {\n    \"edition\": 2026,\n    \"context\": \"Clube Maker CEP, Colégio Estadual do Paraná.\",\n    \"objective\": \"Despertar o interesse pela tecnologia e pelas carreiras STEAM, mostrando que qualquer pessoa pode dar os primeiros passos na criação de projetos tridimensionais e transformar ideias em soluções reais.\",\n    \"workshop\": {\n      \"duration_minutes\": 90,\n      \"target_audience\": \"Adolescentes de 15 a 18 anos\",\n      \"status\": \"Capacitação-piloto concluída\",\n      \"software\": \"Autodesk Fusion 360\",\n      \"practical_activity\": \"Modelagem de um parafuso e de uma porca.\",\n      \"topics\": [\n        \"Cultura Maker e STEAM\",\n        \"Acesso e configuração\",\n        \"Interface e navegação 3D\",\n        \"Modelagem paramétrica\",\n        \"Registro e continuidade\"\n      ]\n    },\n    \"support_material\": {\n      \"description\": \"Guia de apoio do minicurso, disponível para consulta e download, com conceitos e etapas utilizadas durante a atividade prática no Fusion 360.\",\n      \"url\": \"https://ryan20014737472.github.io/Fecci-fusion-360/assets/mat%C3%A9rial%20de%20apoio.pdf\"\n    },\n    \"results\": {\n      \"completed_stage\": \"Capacitação-piloto da equipe\",\n      \"available_evidence\": \"Registros qualitativos de capacitação, orientação, mentoria e coordenação.\",\n      \"quantitative_results_status\": \"Os indicadores quantitativos serão publicados somente depois da aplicação às turmas e da análise dos questionários.\",\n      \"next_stage\": \"Aplicação às turmas, questionários e análise das evidências produzidas.\"\n    }\n  },\n  \"source_checked_at\": \"2026-10-03\",\n  \"sources\": [\n    {\n      \"section\": \"Início e rodapé\",\n      \"url\": \"https://ryan20014737472.github.io/Fecci-fusion-360/\"\n    },\n    {\n      \"section\": \"Sobre o projeto\",\n      \"url\": \"https://ryan20014737472.github.io/Fecci-fusion-360/#projeto\"\n    },\n    {\n      \"section\": \"Fundamentação teórica\",\n      \"url\": \"https://ryan20014737472.github.io/Fecci-fusion-360/#fundamentacao\"\n    },\n    {\n      \"section\": \"Artigo do projeto\",\n      \"url\": \"https://ryan20014737472.github.io/Fecci-fusion-360/#artigo-fecci\"\n    },\n    {\n      \"section\": \"O minicurso\",\n      \"url\": \"https://ryan20014737472.github.io/Fecci-fusion-360/#minicurso\"\n    },\n    {\n      \"section\": \"Material de apoio\",\n      \"url\": \"https://ryan20014737472.github.io/Fecci-fusion-360/#material\"\n    },\n    {\n      \"section\": \"Aplicação e resultados\",\n      \"url\": \"https://ryan20014737472.github.io/Fecci-fusion-360/#resultados\"\n    },\n    {\n      \"section\": \"Diário de bordo\",\n      \"url\": \"https://ryan20014737472.github.io/Fecci-fusion-360/#diario\"\n    }\n  ]\n}"
+      }
+    ],
+    "structuredContent": {
+      "name": "Projeto FECCI",
+      "title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+      "description": "Projeto desenvolvido no Clube Maker CEP para aproximar estudantes do primeiro ano do Ensino Médio da Cultura Maker e das áreas STEAM. Apresenta o Autodesk Fusion 360 de forma simples, prática e acessível por meio de uma oficina introdutória de modelagem paramétrica de um parafuso e uma porca, com material de apoio e uma plataforma digital para revisão e continuidade da prática.",
+      "areas": [
+        "Autodesk Fusion 360",
+        "Modelagem 3D e CAD",
+        "Modelagem paramétrica",
+        "Prototipagem 3D",
+        "Educação e aprendizagem prática",
+        "STEAM",
+        "Cultura Maker",
+        "Visualização espacial"
+      ],
+      "official_site_url": "https://ryan20014737472.github.io/Fecci-fusion-360/",
+      "public_information": {
+        "edition": 2026,
+        "context": "Clube Maker CEP, Colégio Estadual do Paraná.",
+        "objective": "Despertar o interesse pela tecnologia e pelas carreiras STEAM, mostrando que qualquer pessoa pode dar os primeiros passos na criação de projetos tridimensionais e transformar ideias em soluções reais.",
+        "workshop": {
+          "duration_minutes": 90,
+          "target_audience": "Adolescentes de 15 a 18 anos",
+          "status": "Capacitação-piloto concluída",
+          "software": "Autodesk Fusion 360",
+          "practical_activity": "Modelagem de um parafuso e de uma porca.",
+          "topics": [
+            "Cultura Maker e STEAM",
+            "Acesso e configuração",
+            "Interface e navegação 3D",
+            "Modelagem paramétrica",
+            "Registro e continuidade"
+          ]
+        },
+        "support_material": {
+          "description": "Guia de apoio do minicurso, disponível para consulta e download, com conceitos e etapas utilizadas durante a atividade prática no Fusion 360.",
+          "url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/mat%C3%A9rial%20de%20apoio.pdf"
+        },
+        "results": {
+          "completed_stage": "Capacitação-piloto da equipe",
+          "available_evidence": "Registros qualitativos de capacitação, orientação, mentoria e coordenação.",
+          "quantitative_results_status": "Os indicadores quantitativos serão publicados somente depois da aplicação às turmas e da análise dos questionários.",
+          "next_stage": "Aplicação às turmas, questionários e análise das evidências produzidas."
+        }
+      },
+      "source_checked_at": "2026-10-03",
+      "sources": [
+        {
+          "section": "Início e rodapé",
+          "url": "https://ryan20014737472.github.io/Fecci-fusion-360/"
+        },
+        {
+          "section": "Sobre o projeto",
+          "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#projeto"
+        },
+        {
+          "section": "Fundamentação teórica",
+          "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#fundamentacao"
+        },
+        {
+          "section": "Artigo do projeto",
+          "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#artigo-fecci"
+        },
+        {
+          "section": "O minicurso",
+          "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#minicurso"
+        },
+        {
+          "section": "Material de apoio",
+          "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#material"
+        },
+        {
+          "section": "Aplicação e resultados",
+          "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#resultados"
+        },
+        {
+          "section": "Diário de bordo",
+          "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#diario"
+        }
+      ]
+    }
+  },
+  "error": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Não foi possível carregar as informações públicas do Projeto FECCI."
+      }
+    ],
+    "isError": true
+  }
+}

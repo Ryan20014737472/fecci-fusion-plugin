@@ -1,0 +1,156 @@
+{
+  "title": "O minicurso — Uma aula para aprender fazendo.",
+  "objective": "Apresentar o Fusion 360 de forma simples, prática e acessível e despertar o interesse pela tecnologia e pelas carreiras STEAM por meio da modelagem tridimensional.",
+  "educational_context": "A proposta do minicurso foi desenvolvida no Clube Maker CEP para aproximar estudantes do primeiro ano do Ensino Médio da Cultura Maker e das áreas STEAM.",
+  "target_audience": "Adolescentes de 15 a 18 anos",
+  "duration_minutes": 90,
+  "software": "Autodesk Fusion 360",
+  "status": "Capacitação-piloto concluída",
+  "contents": [
+    {
+      "order": 1,
+      "title": "Cultura Maker e STEAM",
+      "description": "Apresentação do projeto, das áreas STEAM e de aplicações da modelagem 3D em tecnologia, engenharia, design e inovação.",
+      "objective": "Relacionar a atividade prática ao contexto científico e tecnológico.",
+      "content_or_material": "Cultura Maker, STEAM e possibilidades profissionais.",
+      "sources": [
+        {
+          "section": "O minicurso",
+          "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#minicurso"
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "title": "Acesso e configuração",
+      "description": "Orientações para criação da conta educacional e configuração inicial do Autodesk Fusion 360 antes da prática.",
+      "objective": "Entrar no ambiente de trabalho com os recursos necessários prontos.",
+      "content_or_material": "Guia de apoio produzido pela equipe.",
+      "sources": [
+        {
+          "section": "O minicurso",
+          "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#minicurso"
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "title": "Interface e navegação 3D",
+      "description": "Familiarização com a área de trabalho, os planos, as principais ferramentas e a navegação no espaço tridimensional.",
+      "objective": "Reconhecer a interface e navegar com segurança pelo modelo.",
+      "content_or_material": "Planos XY, XZ e YZ, Timeline e ferramentas da oficina.",
+      "sources": [
+        {
+          "section": "O minicurso",
+          "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#minicurso"
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "title": "Modelagem paramétrica",
+      "description": "Construção guiada de modelos para aplicar esboços, cotas, extrusão de sólidos e organização de componentes.",
+      "objective": "Transformar instruções e medidas em um modelo tridimensional.",
+      "content_or_material": "Modelagem de um parafuso e de uma porca.",
+      "sources": [
+        {
+          "section": "O minicurso",
+          "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#minicurso"
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "title": "Registro e continuidade",
+      "description": "Questionários antes e depois da formação apoiarão a comparação do conhecimento e do interesse dos participantes.",
+      "objective": "Registrar a aprendizagem e orientar melhorias nas próximas aplicações.",
+      "content_or_material": "Revisão pelo material complementar e novas práticas.",
+      "sources": [
+        {
+          "section": "O minicurso",
+          "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#minicurso"
+        }
+      ]
+    }
+  ],
+  "practical_activity": {
+    "description": "Modelagem de um parafuso e de uma porca.",
+    "techniques": [
+      "Esboços",
+      "Cotas",
+      "Extrusão de sólidos",
+      "Organização de componentes"
+    ],
+    "sources": [
+      {
+        "section": "O minicurso",
+        "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#minicurso"
+      },
+      {
+        "section": "Sobre o projeto",
+        "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#projeto"
+      }
+    ]
+  },
+  "support_material": {
+    "title": "Guia de apoio do minicurso",
+    "format": "PDF",
+    "pages": 7,
+    "url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/mat%C3%A9rial%20de%20apoio.pdf",
+    "description": "Conteúdo complementar sobre os conceitos e as etapas utilizadas durante a atividade prática no Fusion 360.",
+    "topics": [
+      "Fusion 360 e possibilidades profissionais",
+      "Esboços, planos e modelagem paramétrica",
+      "Ferramentas e fluxo de trabalho da oficina",
+      "Atalhos e caminhos para continuar aprendendo"
+    ],
+    "sources": [
+      {
+        "section": "Material de apoio",
+        "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#material"
+      }
+    ]
+  },
+  "evaluation": {
+    "title": "Questionários pré e pós-formação",
+    "content": "Os questionários preparados serão utilizados para comparar conhecimento e interesse dos participantes; os indicadores quantitativos serão publicados depois da aplicação às turmas e da análise.",
+    "sources": [
+      {
+        "section": "O minicurso",
+        "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#minicurso"
+      },
+      {
+        "section": "Aplicação e resultados",
+        "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#resultados"
+      }
+    ]
+  },
+  "continuity": "Revisão pelo material complementar, continuidade da prática e exploração de novas possibilidades na modelagem 3D.",
+  "source_checked_at": "2026-10-03",
+  "sources": [
+    {
+      "section": "Sobre o projeto",
+      "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#projeto"
+    },
+    {
+      "section": "Artigo do projeto",
+      "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#artigo-fecci"
+    },
+    {
+      "section": "O minicurso",
+      "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#minicurso"
+    },
+    {
+      "section": "Material de apoio",
+      "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#material"
+    },
+    {
+      "section": "Aplicação e resultados",
+      "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#resultados"
+    }
+  ],
+  "verification_scope": "Conteúdo textual e links publicados na página principal do site oficial. PDFs e páginas externas são indicados como recursos; seu conteúdo não foi usado para acrescentar fatos.",
+  "not_published": [
+    "O resumo público do minicurso não informa calendário da oferta, inscrições, quantidade de vagas ou medidas detalhadas do parafuso e da porca. O material PDF é indicado como recurso, sem acrescentar dados extraídos de seu conteúdo."
+  ]
+}

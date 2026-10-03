@@ -1,0 +1,115 @@
+{
+  "title": "Etapas públicas do diário de bordo do Projeto FECCI",
+  "chronology_basis": "published_sequence",
+  "date_information": "O resumo público do diário não informa datas de calendário. A ordem abaixo reproduz as etapas 01 a 05 e a próxima etapa apresentada no site; anos de artigos bibliográficos não são usados como datas do projeto.",
+  "diary_status": "Em produção",
+  "diary_url": "https://canva.link/ino42l26d4v7d6u",
+  "events": [
+    {
+      "order": 1,
+      "title": "Pesquisa",
+      "content": "Leitura dos três artigos que fundamentaram as decisões pedagógicas.",
+      "date": null,
+      "status": "documented",
+      "sources": [
+        {
+          "section": "Diário de bordo",
+          "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#diario"
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "title": "Planejamento",
+      "content": "Organização da metodologia, do roteiro e da progressão do minicurso.",
+      "date": null,
+      "status": "documented",
+      "sources": [
+        {
+          "section": "Diário de bordo",
+          "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#diario"
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "title": "Produção de materiais",
+      "content": "Criação de apresentações, guia de aprendizagem e atividades práticas.",
+      "date": null,
+      "status": "documented",
+      "sources": [
+        {
+          "section": "Diário de bordo",
+          "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#diario"
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "title": "Capacitação-piloto",
+      "content": "Aplicação da oficina com a equipe para validar a proposta e identificar ajustes.",
+      "date": null,
+      "status": "documented",
+      "sources": [
+        {
+          "section": "Diário de bordo",
+          "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#diario"
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "title": "Orientação e mentoria",
+      "content": "Revisão dos materiais, dos formulários e dos métodos de ensino.",
+      "date": null,
+      "status": "documented",
+      "sources": [
+        {
+          "section": "Diário de bordo",
+          "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#diario"
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "title": "Aplicação e avaliação",
+      "content": "Oferta às turmas, questionários e análise das evidências produzidas.",
+      "date": null,
+      "status": "planned",
+      "sources": [
+        {
+          "section": "Diário de bordo",
+          "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#diario"
+        }
+      ]
+    }
+  ],
+  "undated_unordered_records": [
+    {
+      "title": "Conversa com a coordenação de matemática",
+      "content": "A equipe conseguiu 7 turmas para aplicar o curso. O registro da seção Resultados não informa data nem sua posição na sequência do resumo do diário.",
+      "date": null,
+      "sources": [
+        {
+          "section": "Aplicação e resultados",
+          "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#resultados"
+        }
+      ]
+    }
+  ],
+  "source_checked_at": "2026-10-03",
+  "sources": [
+    {
+      "section": "Diário de bordo",
+      "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#diario"
+    },
+    {
+      "section": "Aplicação e resultados",
+      "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#resultados"
+    }
+  ],
+  "verification_scope": "Conteúdo textual e links publicados na página principal do site oficial. PDFs e páginas externas são indicados como recursos; seu conteúdo não foi usado para acrescentar fatos.",
+  "not_published": [
+    "Não há datas de calendário para os marcos no resumo público do diário. O Borke completo continua em produção, e a coordenação de matemática não recebeu uma posição cronológica inferida."
+  ]
+}

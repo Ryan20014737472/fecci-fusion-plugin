@@ -43,11 +43,14 @@ function post(body, extraHeaders = {}) {
   });
 }
 
-test('cliente oficial inicializa e descobre somente a ferramenta de leitura', async (t) => {
+test('cliente oficial inicializa e descobre as sete ferramentas de leitura', async (t) => {
   const client = await connectClient(t);
   assert.equal(client.getServerVersion().title, 'FECCI Fusion 360');
   const { tools } = await client.listTools();
-  assert.deepEqual(tools.map((tool) => tool.name), ['get_project_info']);
+  assert.deepEqual(tools.map((tool) => tool.name), [
+    'get_project_info', 'search_project', 'get_team', 'get_references',
+    'get_workshop_info', 'get_results', 'get_project_timeline',
+  ]);
   assert.equal(tools[0].annotations.readOnlyHint, true);
   assert.equal(tools[0].annotations.destructiveHint, false);
   assert.equal(tools[0].annotations.idempotentHint, true);
@@ -117,7 +120,7 @@ test('Accept incompatível é rejeitado pelo transporte oficial', async () => {
 
 test('ferramenta inexistente e argumentos inesperados retornam erro MCP', async (t) => {
   const client = await connectClient(t);
-  const unknown = await client.callTool({ name: 'get_team', arguments: {} });
+  const unknown = await client.callTool({ name: 'unknown_tool', arguments: {} });
   assert.equal(unknown.isError, true);
   const invalid = await client.callTool({ name: 'get_project_info', arguments: { query: 'teste' } });
   assert.equal(invalid.isError, true);
@@ -169,5 +172,5 @@ test('falha na leitura retorna isError sem expor detalhes internos', async (t) =
   assert.equal(result.isError, true);
   assert.equal(loggedError, true);
   assert.doesNotMatch(JSON.stringify(result), /detalhe-interno-nao-publico/);
-  assert.equal((await client.listTools()).tools.length, 1);
+  assert.equal((await client.listTools()).tools.length, 7);
 });

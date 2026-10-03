@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://render.com/schema/render.yaml.json
+services:
+  - type: web
+    name: fecci-fusion-mcp
+    runtime: node
+    plan: free
+    repo: https://github.com/Ryan20014737472/fecci-fusion-plugin
+    branch: feat/render-deploy
+    autoDeployTrigger: "off"
+    buildCommand: npm ci --omit=dev && npm run check && npm test
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: HOST
+        value: 0.0.0.0
+      - key: SKIP_INSTALL_DEPS
+        value: "true"
+    # PORT e RENDER_EXTERNAL_HOSTNAME são fornecidas automaticamente pelo Render.
+    # PUBLIC_DOMAIN e ALLOWED_ORIGINS são opcionais e podem ser definidas no Dashboard.

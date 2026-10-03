@@ -1,0 +1,181 @@
+{
+  "title": "Referências bibliográficas e recursos publicados no site",
+  "bibliography": [
+    {
+      "title": "Estudo das consequências da aplicação de impressoras 3D no ambiente escolar",
+      "authors": [
+        "Fábio Lombardo Evangelista",
+        "Lincoln Moura de Oliveira"
+      ],
+      "year": 2021,
+      "journal": "Physicae Organum",
+      "volume": 7,
+      "issue": 1,
+      "pages": "39–58",
+      "doi": "10.26512/2446-564X2021e35946",
+      "doi_url": "https://doi.org/10.26512/2446-564X2021e35946",
+      "pdf_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/evangelista-oliveira-2021.pdf",
+      "citation_as_published": "EVANGELISTA, Fábio Lombardo; OLIVEIRA, Lincoln Moura de. Estudo das consequências da aplicação de impressoras 3D no ambiente escolar. Physicae Organum, Brasília, v. 7, n. 1, p. 39–58, 2021. DOI: 10.26512/2446-564X2021e35946.",
+      "contribution": "Fundamentou a aproximação entre teoria e prática e o uso da prototipagem para estimular criatividade e resolução de problemas.",
+      "sources": [
+        {
+          "section": "Referências",
+          "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#referencias"
+        },
+        {
+          "section": "Fundamentação teórica",
+          "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#fundamentacao"
+        }
+      ]
+    },
+    {
+      "title": "Manufatura aditiva e o ambiente maker: sinergia para transformar o ensino de desenho técnico e modelagem 3D",
+      "authors": [
+        "Victor Rasquinho Ho Te Chang",
+        "Dominycke Guasti de Melo",
+        "Sinval Pedroso da Silva"
+      ],
+      "year": 2025,
+      "journal": "Brazilian Journal of Production Engineering",
+      "volume": 11,
+      "issue": 3,
+      "pages": "53–75",
+      "doi": "10.47456/bjpe.v11i3.48046",
+      "doi_url": "https://doi.org/10.47456/bjpe.v11i3.48046",
+      "pdf_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/chang,melo,silva_compressed.pdf",
+      "citation_as_published": "CHANG, Victor Rasquinho Ho Te; MELO, Dominycke Guasti de; SILVA, Sinval Pedroso da. Manufatura aditiva e o ambiente maker: sinergia para transformar o ensino de desenho técnico e modelagem 3D. Brazilian Journal of Production Engineering, v. 11, n. 3, p. 53–75, 2025. DOI: 10.47456/bjpe.v11i3.48046.",
+      "contribution": "Apoiou a integração entre CAD e aprendizagem prática e serviu de referência para a comparação entre questionários antes e depois da atividade.",
+      "sources": [
+        {
+          "section": "Referências",
+          "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#referencias"
+        },
+        {
+          "section": "Fundamentação teórica",
+          "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#fundamentacao"
+        }
+      ]
+    },
+    {
+      "title": "O pensamento geométrico espacial e sua articulação com a visualização e a manipulação de objetos em 3D",
+      "authors": [
+        "Zsolt Lavicza",
+        "Celina Aparecida Almeida Pereira Abar",
+        "Mathias Tejera"
+      ],
+      "year": 2023,
+      "journal": "Educação Matemática Pesquisa",
+      "volume": 25,
+      "issue": 2,
+      "pages": "258–277",
+      "doi": "10.23925/1983-3156.2023v25i2p258-277",
+      "doi_url": "https://doi.org/10.23925/1983-3156.2023v25i2p258-277",
+      "pdf_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/Lavicza,Abar,Tejera.pdf",
+      "citation_as_published": "LAVICZA, Zsolt; ABAR, Celina Aparecida Almeida Pereira; TEJERA, Mathias. O pensamento geométrico espacial e sua articulação com a visualização e a manipulação de objetos em 3D. Educação Matemática Pesquisa, São Paulo, v. 25, n. 2, p. 258–277, 2023. DOI: 10.23925/1983-3156.2023v25i2p258-277.",
+      "contribution": "Reforçou a importância da visualização espacial, da manipulação de objetos em 3D e de uma orientação guiada durante a aprendizagem.",
+      "sources": [
+        {
+          "section": "Referências",
+          "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#referencias"
+        },
+        {
+          "section": "Fundamentação teórica",
+          "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#fundamentacao"
+        }
+      ]
+    }
+  ],
+  "additional_materials": [
+    {
+      "title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+      "category": "project_article",
+      "url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+      "description": "Artigo científico do projeto, edição 2026, apresentado no site como documento de 5 páginas. Reúne fundamentação, planejamento, capacitação inicial, materiais e a distinção entre resultados parciais e esperados.",
+      "sources": [
+        {
+          "section": "Artigo do projeto",
+          "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#artigo-fecci"
+        }
+      ]
+    },
+    {
+      "title": "Guia de apoio do minicurso",
+      "category": "support_material",
+      "url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/mat%C3%A9rial%20de%20apoio.pdf",
+      "description": "Material complementar em PDF, de 7 páginas, disponível para consulta e download.",
+      "sources": [
+        {
+          "section": "Material de apoio",
+          "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#material"
+        }
+      ]
+    },
+    {
+      "title": "Borke — diário de bordo",
+      "category": "project_journal",
+      "url": "https://canva.link/ino42l26d4v7d6u",
+      "description": "Documento ainda em produção; o site publica um resumo das etapas e um link de acesso.",
+      "sources": [
+        {
+          "section": "Diário de bordo",
+          "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#diario"
+        }
+      ]
+    },
+    {
+      "title": "Autodesk Fusion 360",
+      "category": "software_link",
+      "url": "https://www.autodesk.com/products/fusion-360/overview",
+      "description": "Link da ferramenta utilizada no projeto, exibido na seção inicial do site.",
+      "sources": [
+        {
+          "section": "Início e rodapé",
+          "url": "https://ryan20014737472.github.io/Fecci-fusion-360/"
+        }
+      ]
+    },
+    {
+      "title": "Repositório do site no GitHub",
+      "category": "site_repository",
+      "url": "https://github.com/Ryan20014737472/Fecci-fusion-360",
+      "description": "Repositório vinculado no rodapé do site. Não é uma referência bibliográfica teórica.",
+      "sources": [
+        {
+          "section": "Início e rodapé",
+          "url": "https://ryan20014737472.github.io/Fecci-fusion-360/"
+        }
+      ]
+    }
+  ],
+  "source_checked_at": "2026-10-03",
+  "sources": [
+    {
+      "section": "Referências",
+      "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#referencias"
+    },
+    {
+      "section": "Fundamentação teórica",
+      "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#fundamentacao"
+    },
+    {
+      "section": "Artigo do projeto",
+      "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#artigo-fecci"
+    },
+    {
+      "section": "Material de apoio",
+      "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#material"
+    },
+    {
+      "section": "Diário de bordo",
+      "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#diario"
+    },
+    {
+      "section": "Início e rodapé",
+      "url": "https://ryan20014737472.github.io/Fecci-fusion-360/"
+    }
+  ],
+  "verification_scope": "Conteúdo textual e links publicados na página principal do site oficial. PDFs e páginas externas são indicados como recursos; seu conteúdo não foi usado para acrescentar fatos.",
+  "not_published": [
+    "As citações exibidas na seção Referências não incluem datas de acesso. A versão final do Borke ainda não é anunciada no resumo público do diário."
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "title": "Equipe e papéis públicos do Projeto FECCI",
+  "members": [
+    {
+      "name": "Helton Limberger",
+      "role": "Técnico de apoio ao projeto",
+      "responsibilities": "Orientar os participantes, prestar suporte durante a oficina e auxiliá-los no desenvolvimento das atividades práticas.",
+      "sources": [
+        {
+          "section": "Equipe do projeto",
+          "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#equipe"
+        }
+      ]
+    },
+    {
+      "name": "Renan Decker",
+      "role": "Organizador do projeto",
+      "responsibilities": "Elaboração de materiais, como apresentações, documentos e demais conteúdos utilizados no desenvolvimento e na execução do projeto.",
+      "sources": [
+        {
+          "section": "Equipe do projeto",
+          "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#equipe"
+        }
+      ]
+    },
+    {
+      "name": "Ryan Batistel",
+      "role": "Criador e coordenador do projeto",
+      "responsibilities": "Desenvolvimento e aplicação das aulas, além de contribuir com o design e a identidade visual do site.",
+      "sources": [
+        {
+          "section": "Equipe do projeto",
+          "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#equipe"
+        }
+      ]
+    },
+    {
+      "name": "Arthur Dutra",
+      "role": "Responsável pela programação do site do projeto",
+      "responsibilities": "Programação da plataforma de apoio ao minicurso e do ambiente de testes para o desenvolvimento e aperfeiçoamento das versões da oficina.",
+      "sources": [
+        {
+          "section": "Equipe do projeto",
+          "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#equipe"
+        }
+      ]
+    }
+  ],
+  "additional_public_roles": [
+    {
+      "name": "Helton Limberger Moura",
+      "role": "Orientação do artigo do projeto",
+      "description": "Apresentado como responsável pela orientação na seção Artigo do projeto.",
+      "sources": [
+        {
+          "section": "Artigo do projeto",
+          "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#artigo-fecci"
+        }
+      ]
+    },
+    {
+      "name": "Profa. Dra. Mia Liberata David",
+      "role": "Coorientação",
+      "description": "Coorientadora que contribuiu com sugestões de aprimoramento dos materiais produzidos, incluindo os formulários de avaliação antes e após o minicurso.",
+      "sources": [
+        {
+          "section": "Artigo do projeto",
+          "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#artigo-fecci"
+        },
+        {
+          "section": "Aplicação e resultados",
+          "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#resultados"
+        }
+      ]
+    },
+    {
+      "name": "Bruno Antunes Martins",
+      "role": "Mentoria",
+      "description": "Apresentador do canal Pro Makers no YouTube. Participou de uma reunião pelo Google Meet com recomendações para métodos de ensino, plano de aula e materiais. O site informa formação em Engenharia Mecânica, mestrado em Engenharia Aeroespacial pelo ITA e experiência com produtos, CNC, automação e impressão 3D.",
+      "sources": [
+        {
+          "section": "Aplicação e resultados",
+          "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#resultados"
+        }
+      ]
+    }
+  ],
+  "article_authorship": {
+    "names": [
+      "Ryan Victor do Amaral Batistel",
+      "Renan Kauê Decker Silva",
+      "Arthur Luz Dutra"
+    ],
+    "sources": [
+      {
+        "section": "Artigo do projeto",
+        "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#artigo-fecci"
+      }
+    ]
+  },
+  "source_checked_at": "2026-10-03",
+  "sources": [
+    {
+      "section": "Equipe do projeto",
+      "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#equipe"
+    },
+    {
+      "section": "Artigo do projeto",
+      "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#artigo-fecci"
+    },
+    {
+      "section": "Aplicação e resultados",
+      "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#resultados"
+    }
+  ],
+  "verification_scope": "Conteúdo textual e links publicados na página principal do site oficial. PDFs e páginas externas são indicados como recursos; seu conteúdo não foi usado para acrescentar fatos.",
+  "not_published": [
+    "A seção Equipe não informa contatos ou datas de ingresso dos participantes. Os nomes dos cartões e os nomes da autoria do artigo são preservados em seus contextos, sem criar um cadastro unificado de identidades."
+  ]
+}
