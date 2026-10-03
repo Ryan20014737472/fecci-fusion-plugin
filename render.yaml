@@ -3,7 +3,7 @@ services:
   - type: web
     name: fecci-fusion-mcp
     runtime: node
-    plan: starter
+    plan: free
     repo: https://github.com/Ryan20014737472/fecci-fusion-plugin
     branch: feat/render-deploy
     autoDeployTrigger: "off"

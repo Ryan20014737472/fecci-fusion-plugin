@@ -297,7 +297,7 @@ Ferramentas planejadas, ainda **não implementadas nem anunciadas** pelo servido
 | Health check path | `/health` |
 | Node | `24.19.0`, via `.node-version` |
 | Variáveis definidas pelo Blueprint | `NODE_ENV=production`, `HOST=0.0.0.0`, `SKIP_INSTALL_DEPS=true` |
-| Plano | Starter, pago, para manter o serviço disponível continuamente. |
+| Plano | Free (`plan: free`), com suspensão após 15 minutos sem tráfego. |
 | Deploys automáticos | Desativados (`autoDeployTrigger: "off"`). O primeiro deploy ocorre ao criar o serviço; os seguintes são manuais. |
 
 O build instala pelo lockfile, verifica a sintaxe e executa todos os testes.
@@ -306,10 +306,14 @@ de produção; não é necessário instalar dependências de desenvolvimento.
 `SKIP_INSTALL_DEPS=true` desativa a instalação automática adicional do Render,
 pois o build já executa `npm ci`.
 
-O plano Starter do Blueprint gera cobrança no Render. Revise o plano e a região
-antes de criar o serviço. Se escolher Free para experimentar, considere que
-o serviço pode suspender por inatividade e apresentar demora ao retomar; isso
-pode afetar a disponibilidade das chamadas MCP.
+O Blueprint usa `plan: free`, válido para um Web Service Node.js conforme a
+[referência atual do Blueprint](https://render.com/docs/blueprint-spec).
+O [plano Free](https://render.com/docs/free) permite domínios próprios e TLS gerenciado,
+mas suspende o serviço após 15 minutos sem tráfego; a retomada leva cerca de um minuto
+e pode atrasar uma chamada MCP. Há 750 horas gratuitas por workspace a cada mês;
+ao esgotá-las, os serviços Free ficam suspensos até o mês seguinte. O Render recomenda
+Free para testes, projetos pessoais e prévias, em vez de aplicações de produção.
+Revise o plano Free e a região antes de criar o serviço.
 
 ### Passos manuais no Render
 
@@ -318,7 +322,7 @@ pode afetar a disponibilidade das chamadas MCP.
 2. Selecione **New > Blueprint**, escolha esse repositório e a branch
    **`feat/render-deploy`**, e use o arquivo **`render.yaml`** na raiz. Não selecione
    `main` nesta preparação: a configuração de deploy está na nova branch.
-3. Revise o serviço, o plano Starter e a região; confirme a criação. Não há
+3. Revise o serviço, o plano Free e a região; confirme a criação. Não há
    credenciais da aplicação para preencher. O Blueprint define as três variáveis
    listadas acima; o Render fornece `PORT` e `RENDER_EXTERNAL_HOSTNAME`.
 4. Aguarde o build, os testes e o health check, até o serviço aparecer como **Live**.
@@ -387,8 +391,9 @@ pelo `.gitignore`; configurações particulares devem ficar no Dashboard do Rend
 Referências: [Web Services](https://render.com/docs/web-services),
 [variáveis da plataforma](https://render.com/docs/environment-variables),
 [health checks](https://render.com/docs/health-checks),
-[versão do Node](https://render.com/docs/node-version) e
-[Blueprint](https://render.com/docs/blueprint-spec).
+[versão do Node](https://render.com/docs/node-version),
+[Blueprint](https://render.com/docs/blueprint-spec) e
+[limites do plano Free](https://render.com/docs/free).
 
 ## Conexão ao ChatGPT
 
