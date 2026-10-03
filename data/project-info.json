@@ -1,0 +1,80 @@
+{
+  "name": "Projeto FECCI",
+  "title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+  "description": "Projeto desenvolvido no Clube Maker CEP para aproximar estudantes do primeiro ano do Ensino Médio da Cultura Maker e das áreas STEAM. Apresenta o Autodesk Fusion 360 de forma simples, prática e acessível por meio de uma oficina introdutória de modelagem paramétrica de um parafuso e uma porca, com material de apoio e uma plataforma digital para revisão e continuidade da prática.",
+  "areas": [
+    "Autodesk Fusion 360",
+    "Modelagem 3D e CAD",
+    "Modelagem paramétrica",
+    "Prototipagem 3D",
+    "Educação e aprendizagem prática",
+    "STEAM",
+    "Cultura Maker",
+    "Visualização espacial"
+  ],
+  "official_site_url": "https://ryan20014737472.github.io/Fecci-fusion-360/",
+  "public_information": {
+    "edition": 2026,
+    "context": "Clube Maker CEP, Colégio Estadual do Paraná.",
+    "objective": "Despertar o interesse pela tecnologia e pelas carreiras STEAM, mostrando que qualquer pessoa pode dar os primeiros passos na criação de projetos tridimensionais e transformar ideias em soluções reais.",
+    "workshop": {
+      "duration_minutes": 90,
+      "target_audience": "Adolescentes de 15 a 18 anos",
+      "status": "Capacitação-piloto concluída",
+      "software": "Autodesk Fusion 360",
+      "practical_activity": "Modelagem de um parafuso e de uma porca.",
+      "topics": [
+        "Cultura Maker e STEAM",
+        "Acesso e configuração",
+        "Interface e navegação 3D",
+        "Modelagem paramétrica",
+        "Registro e continuidade"
+      ]
+    },
+    "support_material": {
+      "description": "Guia de apoio do minicurso, disponível para consulta e download, com conceitos e etapas utilizadas durante a atividade prática no Fusion 360.",
+      "url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/mat%C3%A9rial%20de%20apoio.pdf"
+    },
+    "results": {
+      "completed_stage": "Capacitação-piloto da equipe",
+      "available_evidence": "Registros qualitativos de capacitação, orientação, mentoria e coordenação.",
+      "quantitative_results_status": "Os indicadores quantitativos serão publicados somente depois da aplicação às turmas e da análise dos questionários.",
+      "next_stage": "Aplicação às turmas, questionários e análise das evidências produzidas."
+    }
+  },
+  "source_checked_at": "2026-10-03",
+  "sources": [
+    {
+      "section": "Início e rodapé",
+      "url": "https://ryan20014737472.github.io/Fecci-fusion-360/"
+    },
+    {
+      "section": "Sobre o projeto",
+      "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#projeto"
+    },
+    {
+      "section": "Fundamentação teórica",
+      "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#fundamentacao"
+    },
+    {
+      "section": "Artigo do projeto",
+      "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#artigo-fecci"
+    },
+    {
+      "section": "O minicurso",
+      "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#minicurso"
+    },
+    {
+      "section": "Material de apoio",
+      "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#material"
+    },
+    {
+      "section": "Aplicação e resultados",
+      "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#resultados"
+    },
+    {
+      "section": "Diário de bordo",
+      "url": "https://ryan20014737472.github.io/Fecci-fusion-360/#diario"
+    }
+  ]
+}

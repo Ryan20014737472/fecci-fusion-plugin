@@ -1,1 +1,25 @@
-
+{
+  "name": "fecci-fusion-plugin",
+  "version": "0.1.0",
+  "description": "Servidor MCP do FECCI Fusion 360 com informações públicas do Projeto FECCI.",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test",
+    "check": "node --check server.js && node --check src/app.js && node --check src/config.js && node --check src/mcp-server.js && node --check src/data/project-info.js && node --check src/tools/index.js && node --check src/tools/get-project-info.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.0",
+    "express": "^5.2.1",
+    "zod": "^4.6.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ryan20014737472/fecci-fusion-plugin.git"
+  }
+}
