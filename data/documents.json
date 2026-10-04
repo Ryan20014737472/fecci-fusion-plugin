@@ -1,0 +1,317 @@
+{
+  "schema_version": 1,
+  "title": "Documentos públicos vinculados ao Projeto FECCI",
+  "source_checked_at": "2026-10-04",
+  "sources": [
+    {
+      "document_title": "Projeto FECCI — site oficial",
+      "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/#artigo-fecci",
+      "page": null,
+      "section": "artigo-fecci",
+      "source_checked_at": "2026-10-04"
+    },
+    {
+      "document_title": "Projeto FECCI — site oficial",
+      "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/#material",
+      "page": null,
+      "section": "material",
+      "source_checked_at": "2026-10-04"
+    },
+    {
+      "document_title": "Projeto FECCI — site oficial",
+      "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/#diario",
+      "page": null,
+      "section": "diario",
+      "source_checked_at": "2026-10-04"
+    },
+    {
+      "document_title": "Projeto FECCI — site oficial",
+      "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/#referencias",
+      "page": null,
+      "section": "referencias",
+      "source_checked_at": "2026-10-04"
+    }
+  ],
+  "verification_scope": "PDFs oficiais: download público e conferência de metadados; artigo e guia com texto e revisão visual das tabelas. Borke: texto anônimo presente na resposta pública do Canva, com páginas na ordem do design. Referências de terceiros: somente inventário e metadados, sem corpus integral.",
+  "not_verified": [
+    {
+      "id": "journal-export",
+      "content": "Não foi obtida uma exportação PDF pública do Borke; o conteúdo incorporado é o texto do design público do Canva. Não foram transcritas fotografias ou registros presentes apenas em imagens.",
+      "status": "not_published",
+      "provenance": [
+        {
+          "document_title": "Borke final",
+          "source_url": "https://canva.link/ino42l26d4v7d6u",
+          "page": null,
+          "section": null,
+          "source_checked_at": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "reference-corpus-scope",
+      "content": "Os três PDFs bibliográficos foram verificados como arquivos acessíveis, mas seu texto não foi incorporado ao corpus. A fundamentação usa o que o próprio projeto publica no artigo e no site.",
+      "status": "context",
+      "provenance": [
+        {
+          "document_title": "Projeto FECCI — site oficial",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/#referencias",
+          "page": null,
+          "section": "referencias",
+          "source_checked_at": "2026-10-04"
+        },
+        {
+          "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+          "page": 5,
+          "section": "Referências",
+          "source_checked_at": "2026-10-04"
+        }
+      ]
+    }
+  ],
+  "documents": [
+    {
+      "id": "project-article",
+      "title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+      "type": "project_article",
+      "description": "Artigo autoral do projeto com resumo, introdução, encaminhamento metodológico, resultados esperados/parciais, considerações finais e referências.",
+      "url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+      "page_count": 5,
+      "page_basis": "pdf_order",
+      "source_checked_at": "2026-10-04",
+      "availability": "available",
+      "verification_method": "pdf_text_and_visual_review",
+      "corpus_included": true,
+      "content_sha256": "14dde181763de2e75706d257a78ebbc001ca3d3d21d4e8adce0b3876f5715f40",
+      "checksum_kind": "pdf_bytes",
+      "sources": [
+        {
+          "document_title": "Projeto FECCI — site oficial",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/#artigo-fecci",
+          "page": null,
+          "section": "artigo-fecci",
+          "source_checked_at": "2026-10-04"
+        },
+        {
+          "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+          "page": null,
+          "section": null,
+          "source_checked_at": "2026-10-04"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "support-material",
+      "title": "Material de apoio — Oficina Fusion 360",
+      "type": "support_material",
+      "description": "Guia da oficina com conceitos, ferramentas, fluxo de trabalho, atalhos e continuidade da aprendizagem.",
+      "url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/mat%C3%A9rial%20de%20apoio.pdf",
+      "page_count": 7,
+      "page_basis": "pdf_order",
+      "source_checked_at": "2026-10-04",
+      "availability": "available",
+      "verification_method": "pdf_text_and_visual_review",
+      "corpus_included": true,
+      "content_sha256": "61550bfc70e7da5aec2ae07249ace467d58c8007606ba482435c49c5ab82af4d",
+      "checksum_kind": "pdf_bytes",
+      "sources": [
+        {
+          "document_title": "Projeto FECCI — site oficial",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/#material",
+          "page": null,
+          "section": "material",
+          "source_checked_at": "2026-10-04"
+        },
+        {
+          "document_title": "Material de apoio — Oficina Fusion 360",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/mat%C3%A9rial%20de%20apoio.pdf",
+          "page": null,
+          "section": null,
+          "source_checked_at": "2026-10-04"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "project-journal",
+      "title": "Borke final",
+      "type": "project_journal",
+      "description": "Design público do Canva vinculado como diário Borke. Foram verificados os blocos textuais públicos; não foi obtido um PDF exportado.",
+      "url": "https://canva.link/ino42l26d4v7d6u",
+      "page_count": 11,
+      "page_basis": "canva_design_order",
+      "source_checked_at": "2026-10-04",
+      "availability": "available",
+      "verification_method": "public_canva_text",
+      "corpus_included": true,
+      "content_sha256": "138216dd37d050da598d128ab1b92e0f1546b2928c4e606eb20c298cd4e6b118",
+      "checksum_kind": "extracted_canva_text",
+      "sources": [
+        {
+          "document_title": "Projeto FECCI — site oficial",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/#diario",
+          "page": null,
+          "section": "diario",
+          "source_checked_at": "2026-10-04"
+        },
+        {
+          "document_title": "Borke final",
+          "source_url": "https://canva.link/ino42l26d4v7d6u",
+          "page": null,
+          "section": null,
+          "source_checked_at": "2026-10-04"
+        }
+      ],
+      "notes": [
+        {
+          "id": "journal-title-status",
+          "content": "O Canva apresenta o título “Borke final”, enquanto o site descreve o diário como em produção. O título não comprova conclusão do projeto ou aplicação do minicurso às turmas.",
+          "status": "ambiguous",
+          "provenance": [
+            {
+              "document_title": "Projeto FECCI — site oficial",
+              "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/#diario",
+              "page": null,
+              "section": "diario",
+              "source_checked_at": "2026-10-04"
+            },
+            {
+              "document_title": "Borke final",
+              "source_url": "https://canva.link/ino42l26d4v7d6u",
+              "page": 1,
+              "section": "Capa",
+              "source_checked_at": "2026-10-04"
+            }
+          ]
+        },
+        {
+          "id": "journal-page-numbering",
+          "content": "As páginas são posições de 1 a 11 na sequência pública do design do Canva, incluindo a última página sem texto extraível; não são números de um PDF exportado.",
+          "status": "context",
+          "provenance": [
+            {
+              "document_title": "Borke final",
+              "source_url": "https://canva.link/ino42l26d4v7d6u",
+              "page": null,
+              "section": null,
+              "source_checked_at": "2026-10-04"
+            }
+          ]
+        },
+        {
+          "id": "journal-dates",
+          "content": "Os registros textuais consultados usam datas de dia e mês sem ano explícito. Não foram convertidas em datas de calendário completas.",
+          "status": "not_published",
+          "provenance": [
+            {
+              "document_title": "Borke final",
+              "source_url": "https://canva.link/ino42l26d4v7d6u",
+              "page": 4,
+              "section": "Janeiro - Março",
+              "source_checked_at": "2026-10-04"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bibliography-1",
+      "title": "Estudo das consequências da aplicação de impressoras 3D no ambiente escolar",
+      "type": "bibliographic_reference",
+      "description": "Referência de terceiros vinculada pelo projeto; arquivo e número de páginas verificados, sem indexação de seu texto nesta V3.",
+      "url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/evangelista-oliveira-2021.pdf",
+      "page_count": 20,
+      "page_basis": "pdf_order",
+      "source_checked_at": "2026-10-04",
+      "availability": "available",
+      "verification_method": "pdf_metadata",
+      "corpus_included": false,
+      "content_sha256": "cf0f0d6d9cb192c2072132ed7f4c2902151b8d43a49e770d93cacd3ba0e6d16e",
+      "checksum_kind": "pdf_bytes",
+      "sources": [
+        {
+          "document_title": "Projeto FECCI — site oficial",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/#referencias",
+          "page": null,
+          "section": "referencias",
+          "source_checked_at": "2026-10-04"
+        },
+        {
+          "document_title": "Estudo das consequências da aplicação de impressoras 3D no ambiente escolar",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/evangelista-oliveira-2021.pdf",
+          "page": null,
+          "section": null,
+          "source_checked_at": "2026-10-04"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "bibliography-2",
+      "title": "Manufatura aditiva e o ambiente maker: sinergia para transformar o ensino de desenho técnico e modelagem 3D",
+      "type": "bibliographic_reference",
+      "description": "Referência de terceiros vinculada pelo projeto; arquivo e número de páginas verificados, sem indexação de seu texto nesta V3.",
+      "url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/chang,melo,silva_compressed.pdf",
+      "page_count": 23,
+      "page_basis": "pdf_order",
+      "source_checked_at": "2026-10-04",
+      "availability": "available",
+      "verification_method": "pdf_metadata",
+      "corpus_included": false,
+      "content_sha256": "c169eeacac4408ef7a617f4da8c701a672fdffb2418667bd94d9bacdf89ec64b",
+      "checksum_kind": "pdf_bytes",
+      "sources": [
+        {
+          "document_title": "Projeto FECCI — site oficial",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/#referencias",
+          "page": null,
+          "section": "referencias",
+          "source_checked_at": "2026-10-04"
+        },
+        {
+          "document_title": "Manufatura aditiva e o ambiente maker: sinergia para transformar o ensino de desenho técnico e modelagem 3D",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/chang,melo,silva_compressed.pdf",
+          "page": null,
+          "section": null,
+          "source_checked_at": "2026-10-04"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "bibliography-3",
+      "title": "O pensamento geométrico espacial e sua articulação com a visualização e a manipulação de objetos em 3D",
+      "type": "bibliographic_reference",
+      "description": "Referência de terceiros vinculada pelo projeto; arquivo e número de páginas verificados, sem indexação de seu texto nesta V3.",
+      "url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/Lavicza,Abar,Tejera.pdf",
+      "page_count": 20,
+      "page_basis": "pdf_order",
+      "source_checked_at": "2026-10-04",
+      "availability": "available",
+      "verification_method": "pdf_metadata",
+      "corpus_included": false,
+      "content_sha256": "5c45f6a0cc705e48f48e5f365cef7a528e1151a55b8bd2eac5e0678b95bd75d8",
+      "checksum_kind": "pdf_bytes",
+      "sources": [
+        {
+          "document_title": "Projeto FECCI — site oficial",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/#referencias",
+          "page": null,
+          "section": "referencias",
+          "source_checked_at": "2026-10-04"
+        },
+        {
+          "document_title": "O pensamento geométrico espacial e sua articulação com a visualização e a manipulação de objetos em 3D",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/Lavicza,Abar,Tejera.pdf",
+          "page": null,
+          "section": null,
+          "source_checked_at": "2026-10-04"
+        }
+      ],
+      "notes": []
+    }
+  ]
+}

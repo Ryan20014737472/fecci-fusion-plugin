@@ -1,0 +1,185 @@
+{
+  "baseline_commit": "e59c428c441a59a65b9d1f9aa789e8b7b11e18f8",
+  "hash_algorithm": "SHA-256 de JSON.stringify da definição/resposta do SDK oficial",
+  "tools": [
+    {
+      "name": "get_project_info",
+      "arguments": {},
+      "definition_sha256": "9bfc8fac9b8fee6b5b16920dc0cbaf8fe799e9a847ca4259aad53821378c13fb",
+      "success_sha256": "c456f66400912d47c42b6299b3fd32b11563dc54766971c76bf8af8b3d6f4e46",
+      "error_sha256": "cfe04f50d4f1e12f2c5494328f277a69d26c46628d01d1eb8a2ec4ccb35fbe10"
+    },
+    {
+      "name": "search_project",
+      "arguments": {
+        "query": "parafuso porca"
+      },
+      "definition_sha256": "10a34fc176c838e55bc36f5ed16975af095865991826f1ce61cff4d6468c3b9f",
+      "success_sha256": "fc205db3e5c837fe45430f0c1a12f4b209c96e9735339c7e493ee29dfda56c8e",
+      "error_sha256": "aad86fccba901ce274c8c7a805c1e42e1ecf19867a8e99b3a89f7f37e6b9cfe1"
+    },
+    {
+      "name": "get_team",
+      "arguments": {},
+      "definition_sha256": "3e7123ef7a654f065b21d872ab24af0c043d3180dbe9e851ab1ec6bdaf300ec7",
+      "success_sha256": "7d646d1c814b68198829adf4517d3699a2f946ebaf7be814a85711582bf5b07d",
+      "error_sha256": "aad86fccba901ce274c8c7a805c1e42e1ecf19867a8e99b3a89f7f37e6b9cfe1"
+    },
+    {
+      "name": "get_references",
+      "arguments": {},
+      "definition_sha256": "bfe6c7cde371e35573041d65d9f0bf8d4c17d8c62cb42f7a59a6e8d0f838779f",
+      "success_sha256": "a4a1731229ddb876a923fb5dcd96165fe10dd24d2d34aa1048dd23936d0f94b8",
+      "error_sha256": "aad86fccba901ce274c8c7a805c1e42e1ecf19867a8e99b3a89f7f37e6b9cfe1"
+    },
+    {
+      "name": "get_workshop_info",
+      "arguments": {},
+      "definition_sha256": "862f7ecbf8e2a7fd8d8556bb1f642e4f9858912e1d306c7542f495febba2b80d",
+      "success_sha256": "6777941222febb45115f818142bf8c82d6742ff68824dc94919737dec1ec8217",
+      "error_sha256": "aad86fccba901ce274c8c7a805c1e42e1ecf19867a8e99b3a89f7f37e6b9cfe1"
+    },
+    {
+      "name": "get_results",
+      "arguments": {},
+      "definition_sha256": "a5e4df73580c395ac1e27434442cb277d82171ed2bc9e40312d33b426963c43f",
+      "success_sha256": "448f088708efba40743aaaa5605a6d5860c30819f9e788e37a2c5f7bbdd42e62",
+      "error_sha256": "aad86fccba901ce274c8c7a805c1e42e1ecf19867a8e99b3a89f7f37e6b9cfe1"
+    },
+    {
+      "name": "get_project_timeline",
+      "arguments": {},
+      "definition_sha256": "a5f22fd06ce53945353e44ade328529651dfbba755a374d3cab919eed9ac3671",
+      "success_sha256": "def3170b0ba562d7edb04aef329d28cb9b6d7b1c8f178bf381e8fce82c1f21ff",
+      "error_sha256": "aad86fccba901ce274c8c7a805c1e42e1ecf19867a8e99b3a89f7f37e6b9cfe1"
+    }
+  ],
+  "search_input_schema": {
+    "type": "object",
+    "properties": {
+      "query": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 200,
+        "description": "Consulta textual de 1 a 200 caracteres; termos significativos precisam aparecer no mesmo trecho."
+      }
+    },
+    "required": [
+      "query"
+    ],
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "additionalProperties": false
+  },
+  "search_output_schema": {
+    "type": "object",
+    "properties": {
+      "query": {
+        "type": "string",
+        "minLength": 1
+      },
+      "match_count": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 9007199254740991
+      },
+      "results": {
+        "maxItems": 10,
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "title": {
+              "type": "string",
+              "minLength": 1
+            },
+            "content": {
+              "type": "string",
+              "minLength": 1
+            },
+            "source_checked_at": {
+              "type": "string",
+              "format": "date",
+              "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))$"
+            },
+            "sources": {
+              "minItems": 1,
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "section": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "url": {
+                    "type": "string",
+                    "pattern": "^https:\\/\\/ryan20014737472\\.github\\.io\\/Fecci-fusion-360\\/"
+                  }
+                },
+                "required": [
+                  "section",
+                  "url"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "content",
+            "source_checked_at",
+            "sources"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "message": {
+        "type": "string",
+        "minLength": 1
+      },
+      "source_checked_at": {
+        "type": "string",
+        "format": "date",
+        "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))$",
+        "description": "Data de verificação mais antiga da base consultada; cada resultado informa a data de seu conjunto."
+      },
+      "sources": {
+        "minItems": 1,
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "section": {
+              "type": "string",
+              "minLength": 1
+            },
+            "url": {
+              "type": "string",
+              "pattern": "^https:\\/\\/ryan20014737472\\.github\\.io\\/Fecci-fusion-360\\/"
+            }
+          },
+          "required": [
+            "section",
+            "url"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "query",
+      "match_count",
+      "results",
+      "message",
+      "source_checked_at",
+      "sources"
+    ],
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "additionalProperties": false
+  }
+}

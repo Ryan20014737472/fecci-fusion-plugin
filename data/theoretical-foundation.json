@@ -1,0 +1,1057 @@
+{
+  "schema_version": 1,
+  "title": "Fundamentação teórica publicada pelo próprio projeto",
+  "source_checked_at": "2026-10-04",
+  "sources": [
+    {
+      "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+      "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+      "page": 2,
+      "section": "Introdução",
+      "source_checked_at": "2026-10-04"
+    },
+    {
+      "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+      "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+      "page": 2,
+      "section": "Encaminhamento metodológico",
+      "source_checked_at": "2026-10-04"
+    },
+    {
+      "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+      "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+      "page": 3,
+      "section": "Encaminhamento metodológico",
+      "source_checked_at": "2026-10-04"
+    },
+    {
+      "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+      "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+      "page": 5,
+      "section": "Referências",
+      "source_checked_at": "2026-10-04"
+    },
+    {
+      "document_title": "Projeto FECCI — site oficial",
+      "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/#fundamentacao",
+      "page": null,
+      "section": "fundamentacao",
+      "source_checked_at": "2026-10-04"
+    }
+  ],
+  "verification_scope": "Seis referências utilizadas no artigo do projeto. Conceitos, contribuições e vínculos metodológicos limitados ao que o próprio artigo e site publicam; não foram usados resultados de artigos de terceiros como resultados do FECCI.",
+  "not_verified": [
+    {
+      "id": "foundation-not-research-results",
+      "content": "Não foram transpostos protocolos integrais nem indicadores quantitativos de pesquisas bibliográficas para resultados do FECCI. Vínculos não especificados pelo projeto são declarados como não publicados.",
+      "status": "not_published",
+      "provenance": [
+        {
+          "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+          "page": 2,
+          "section": "Encaminhamento metodológico",
+          "source_checked_at": "2026-10-04"
+        },
+        {
+          "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+          "page": 3,
+          "section": "Encaminhamento metodológico",
+          "source_checked_at": "2026-10-04"
+        },
+        {
+          "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+          "page": 4,
+          "section": "Resultados esperados/parciais",
+          "source_checked_at": "2026-10-04"
+        },
+        {
+          "document_title": "Projeto FECCI — site oficial",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/#fundamentacao",
+          "page": null,
+          "section": "fundamentacao",
+          "source_checked_at": "2026-10-04"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "anderson",
+      "authors": [
+        "Anderson, C."
+      ],
+      "year": 2012,
+      "year_basis": "Ano utilizado na citação do texto do projeto; variantes da bibliografia são informadas separadamente.",
+      "work": "Makers: a nova revolução industrial",
+      "concept_used": {
+        "id": "anderson-concept",
+        "content": "Acesso à fabricação digital, inovação, criação e aproximação de jovens às competências para profissões do futuro.",
+        "status": "context",
+        "provenance": [
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 2,
+            "section": "Introdução",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 5,
+            "section": "Referências",
+            "source_checked_at": "2026-10-04"
+          }
+        ]
+      },
+      "contribution": {
+        "id": "anderson-contribution",
+        "content": "A introdução usa a referência para contextualizar a relação entre tecnologias de fabricação digital e oportunidades profissionais.",
+        "status": "context",
+        "provenance": [
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 2,
+            "section": "Introdução",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 5,
+            "section": "Referências",
+            "source_checked_at": "2026-10-04"
+          }
+        ]
+      },
+      "methodology_link": {
+        "id": "anderson-link",
+        "content": "Não é publicada uma correspondência explícita dessa referência com uma atividade específica do minicurso; o uso identificado é contextual na introdução.",
+        "status": "not_published",
+        "provenance": [
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 2,
+            "section": "Introdução",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 5,
+            "section": "Referências",
+            "source_checked_at": "2026-10-04"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+          "page": 2,
+          "section": "Introdução",
+          "source_checked_at": "2026-10-04"
+        },
+        {
+          "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+          "page": 5,
+          "section": "Referências",
+          "source_checked_at": "2026-10-04"
+        }
+      ],
+      "citation_variants": [
+        {
+          "context": "Referências do artigo do projeto, página 5",
+          "year": 2012,
+          "citation": "ANDERSON, C. Makers: a nova revolução industrial. Rio de Janeiro: Elsevier, 2012.",
+          "provenance": [
+            {
+              "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+              "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+              "page": 5,
+              "section": "Referências",
+              "source_checked_at": "2026-10-04"
+            }
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "autodesk",
+      "authors": [
+        "Autodesk"
+      ],
+      "year": 2026,
+      "year_basis": "Ano utilizado na citação do texto do projeto; variantes da bibliografia são informadas separadamente.",
+      "work": "Autodesk Fusion: software de design, engenharia e manufatura",
+      "concept_used": {
+        "id": "autodesk-concept",
+        "content": "Integração de desenho técnico, modelagem paramétrica, simulação e prototipagem digital.",
+        "status": "context",
+        "provenance": [
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 2,
+            "section": "Introdução",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 3,
+            "section": "Encaminhamento metodológico",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Material de apoio — Oficina Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/mat%C3%A9rial%20de%20apoio.pdf",
+            "page": 3,
+            "section": "Conceitos importantes",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 5,
+            "section": "Referências",
+            "source_checked_at": "2026-10-04"
+          }
+        ]
+      },
+      "contribution": {
+        "id": "autodesk-contribution",
+        "content": "Caracteriza os recursos da ferramenta selecionada pelo projeto; o ano 2026 é usado na citação do texto e no acesso bibliográfico, sem inferir uma edição externa do software.",
+        "status": "context",
+        "provenance": [
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 2,
+            "section": "Introdução",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 3,
+            "section": "Encaminhamento metodológico",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Material de apoio — Oficina Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/mat%C3%A9rial%20de%20apoio.pdf",
+            "page": 3,
+            "section": "Conceitos importantes",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 5,
+            "section": "Referências",
+            "source_checked_at": "2026-10-04"
+          }
+        ]
+      },
+      "methodology_link": {
+        "id": "autodesk-link",
+        "content": "A metodologia utiliza Fusion 360, familiarização com ferramentas e modelagem prática; o guia detalha sketches, cotas, extrusão e edição pela Timeline.",
+        "status": "documented",
+        "provenance": [
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 2,
+            "section": "Introdução",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 3,
+            "section": "Encaminhamento metodológico",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Material de apoio — Oficina Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/mat%C3%A9rial%20de%20apoio.pdf",
+            "page": 3,
+            "section": "Conceitos importantes",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 5,
+            "section": "Referências",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Material de apoio — Oficina Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/mat%C3%A9rial%20de%20apoio.pdf",
+            "page": 4,
+            "section": "Ferramentas utilizadas na oficina",
+            "source_checked_at": "2026-10-04"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+          "page": 2,
+          "section": "Introdução",
+          "source_checked_at": "2026-10-04"
+        },
+        {
+          "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+          "page": 3,
+          "section": "Encaminhamento metodológico",
+          "source_checked_at": "2026-10-04"
+        },
+        {
+          "document_title": "Material de apoio — Oficina Fusion 360",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/mat%C3%A9rial%20de%20apoio.pdf",
+          "page": 3,
+          "section": "Conceitos importantes",
+          "source_checked_at": "2026-10-04"
+        },
+        {
+          "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+          "page": 5,
+          "section": "Referências",
+          "source_checked_at": "2026-10-04"
+        },
+        {
+          "document_title": "Material de apoio — Oficina Fusion 360",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/mat%C3%A9rial%20de%20apoio.pdf",
+          "page": 4,
+          "section": "Ferramentas utilizadas na oficina",
+          "source_checked_at": "2026-10-04"
+        }
+      ],
+      "citation_variants": [
+        {
+          "context": "Referências do artigo do projeto, página 5",
+          "year": 2026,
+          "citation": "AUTODESK. Autodesk Fusion: software de design, engenharia e manufatura. Disponível em: https://www.autodesk.com/products/fusion-360. Acesso em: 10 jun. 2026.",
+          "provenance": [
+            {
+              "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+              "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+              "page": 5,
+              "section": "Referências",
+              "source_checked_at": "2026-10-04"
+            }
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "chang",
+      "authors": [
+        "Victor Rasquinho Ho Te Chang",
+        "Dominycke Guasti de Melo",
+        "Sinval Pedroso da Silva"
+      ],
+      "year": 2025,
+      "year_basis": "Ano utilizado na citação do texto do projeto; variantes da bibliografia são informadas separadamente.",
+      "work": "Manufatura aditiva e o ambiente maker: sinergia para transformar o ensino de desenho técnico e modelagem 3D",
+      "concept_used": {
+        "id": "chang-concept",
+        "content": "Integração entre modelagem digital e fabricação física como apoio à aprendizagem ativa.",
+        "status": "context",
+        "provenance": [
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 2,
+            "section": "Encaminhamento metodológico",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 3,
+            "section": "Encaminhamento metodológico",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Projeto FECCI — site oficial",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/#fundamentacao",
+            "page": null,
+            "section": "fundamentacao",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 5,
+            "section": "Referências",
+            "source_checked_at": "2026-10-04"
+          }
+        ]
+      },
+      "contribution": {
+        "id": "chang-contribution",
+        "content": "O artigo diz que esse estudo subsidiou a elaboração do minicurso; o site aponta integração entre CAD e aprendizagem prática e comparação de questionários antes/depois.",
+        "status": "context",
+        "provenance": [
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 2,
+            "section": "Encaminhamento metodológico",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 3,
+            "section": "Encaminhamento metodológico",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Projeto FECCI — site oficial",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/#fundamentacao",
+            "page": null,
+            "section": "fundamentacao",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 5,
+            "section": "Referências",
+            "source_checked_at": "2026-10-04"
+          }
+        ]
+      },
+      "methodology_link": {
+        "id": "chang-link",
+        "content": "O encaminhamento metodológico usa a literatura para organizar atividades práticas de modelagem e utilizar Fusion 360 e impressão 3D como recursos centrais.",
+        "status": "documented",
+        "provenance": [
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 2,
+            "section": "Encaminhamento metodológico",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 3,
+            "section": "Encaminhamento metodológico",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Projeto FECCI — site oficial",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/#fundamentacao",
+            "page": null,
+            "section": "fundamentacao",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 5,
+            "section": "Referências",
+            "source_checked_at": "2026-10-04"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+          "page": 2,
+          "section": "Encaminhamento metodológico",
+          "source_checked_at": "2026-10-04"
+        },
+        {
+          "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+          "page": 3,
+          "section": "Encaminhamento metodológico",
+          "source_checked_at": "2026-10-04"
+        },
+        {
+          "document_title": "Projeto FECCI — site oficial",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/#fundamentacao",
+          "page": null,
+          "section": "fundamentacao",
+          "source_checked_at": "2026-10-04"
+        },
+        {
+          "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+          "page": 5,
+          "section": "Referências",
+          "source_checked_at": "2026-10-04"
+        }
+      ],
+      "citation_variants": [
+        {
+          "context": "Referências do artigo do projeto, página 5",
+          "year": 2025,
+          "citation": "CHANG, V. R. H. T.; MELO, D. G. de; SILVA, S. P. da. Manufatura aditiva e o ambiente maker: sinergia para transformar o ensino de desenho técnico e modelagem 3D. Brazilian Journal of Production Engineering, v. 11, n. 3, p. 53–75, 2025. DOI: 10.47456/bjpe.v11i3.48046.",
+          "provenance": [
+            {
+              "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+              "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+              "page": 5,
+              "section": "Referências",
+              "source_checked_at": "2026-10-04"
+            }
+          ]
+        },
+        {
+          "context": "Referências do site oficial",
+          "year": 2025,
+          "citation": "CHANG, Victor Rasquinho Ho Te; MELO, Dominycke Guasti de; SILVA, Sinval Pedroso da. Manufatura aditiva e o ambiente maker: sinergia para transformar o ensino de desenho técnico e modelagem 3D. Brazilian Journal of Production Engineering, v. 11, n. 3, p. 53–75, 2025. DOI: 10.47456/bjpe.v11i3.48046.",
+          "provenance": [
+            {
+              "document_title": "Projeto FECCI — site oficial",
+              "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/#referencias",
+              "page": null,
+              "section": "referencias",
+              "source_checked_at": "2026-10-04"
+            }
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "evangelista",
+      "authors": [
+        "Fábio Lombardo Evangelista",
+        "Lincoln Moura de Oliveira"
+      ],
+      "year": 2021,
+      "year_basis": "Ano utilizado na citação do texto do projeto; variantes da bibliografia são informadas separadamente.",
+      "work": "Estudo das consequências da aplicação de impressoras 3D no ambiente escolar",
+      "concept_used": {
+        "id": "evangelista-concept",
+        "content": "Impressão 3D como recurso pedagógico que pode despertar interesse e tornar atividades mais envolventes.",
+        "status": "context",
+        "provenance": [
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 2,
+            "section": "Encaminhamento metodológico",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Projeto FECCI — site oficial",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/#fundamentacao",
+            "page": null,
+            "section": "fundamentacao",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Projeto FECCI — site oficial",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/#referencias",
+            "page": null,
+            "section": "referencias",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 5,
+            "section": "Referências",
+            "source_checked_at": "2026-10-04"
+          }
+        ]
+      },
+      "contribution": {
+        "id": "evangelista-contribution",
+        "content": "O corpo do artigo afirma que esses resultados da literatura reforçaram a proposta de atividades práticas e participativas. Não são resultados próprios do FECCI.",
+        "status": "context",
+        "provenance": [
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 2,
+            "section": "Encaminhamento metodológico",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Projeto FECCI — site oficial",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/#fundamentacao",
+            "page": null,
+            "section": "fundamentacao",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Projeto FECCI — site oficial",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/#referencias",
+            "page": null,
+            "section": "referencias",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 5,
+            "section": "Referências",
+            "source_checked_at": "2026-10-04"
+          }
+        ]
+      },
+      "methodology_link": {
+        "id": "evangelista-link",
+        "content": "O vínculo publicado é a adoção de atividades práticas e participativas durante o desenvolvimento do curso.",
+        "status": "documented",
+        "provenance": [
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 2,
+            "section": "Encaminhamento metodológico",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Projeto FECCI — site oficial",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/#fundamentacao",
+            "page": null,
+            "section": "fundamentacao",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Projeto FECCI — site oficial",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/#referencias",
+            "page": null,
+            "section": "referencias",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 5,
+            "section": "Referências",
+            "source_checked_at": "2026-10-04"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+          "page": 2,
+          "section": "Encaminhamento metodológico",
+          "source_checked_at": "2026-10-04"
+        },
+        {
+          "document_title": "Projeto FECCI — site oficial",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/#fundamentacao",
+          "page": null,
+          "section": "fundamentacao",
+          "source_checked_at": "2026-10-04"
+        },
+        {
+          "document_title": "Projeto FECCI — site oficial",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/#referencias",
+          "page": null,
+          "section": "referencias",
+          "source_checked_at": "2026-10-04"
+        },
+        {
+          "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+          "page": 5,
+          "section": "Referências",
+          "source_checked_at": "2026-10-04"
+        }
+      ],
+      "citation_variants": [
+        {
+          "context": "Referências do artigo do projeto, página 5",
+          "year": 2026,
+          "citation": "EVANGELISTA, F. L.; OLIVEIRA, L. M. Estudo das consequências da aplicação de impressoras 3D no ambiente escolar. Physicae Organum, v. 11, n. 1, 2026. Disponível em: https://doi.org/10.26512/2446-564X1112026. Acesso em: 28 jun 2026.",
+          "provenance": [
+            {
+              "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+              "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+              "page": 5,
+              "section": "Referências",
+              "source_checked_at": "2026-10-04"
+            }
+          ]
+        },
+        {
+          "context": "Referências do site oficial",
+          "year": 2021,
+          "citation": "EVANGELISTA, Fábio Lombardo; OLIVEIRA, Lincoln Moura de. Estudo das consequências da aplicação de impressoras 3D no ambiente escolar. Physicae Organum, Brasília, v. 7, n. 1, p. 39–58, 2021. DOI: 10.26512/2446-564X2021e35946.",
+          "provenance": [
+            {
+              "document_title": "Projeto FECCI — site oficial",
+              "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/#referencias",
+              "page": null,
+              "section": "referencias",
+              "source_checked_at": "2026-10-04"
+            }
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "id": "evangelista-conflict",
+          "content": "O corpo do artigo cita 2021. A bibliografia do mesmo PDF registra 2026, volume 11 e DOI 10.26512/2446-564X1112026; o site registra 2021, volume 7 e DOI 10.26512/2446-564X2021e35946. Nenhuma variante foi corrigida ou tratada como atualização confirmada.",
+          "status": "ambiguous",
+          "provenance": [
+            {
+              "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+              "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+              "page": 2,
+              "section": "Encaminhamento metodológico",
+              "source_checked_at": "2026-10-04"
+            },
+            {
+              "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+              "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+              "page": 5,
+              "section": "Referências",
+              "source_checked_at": "2026-10-04"
+            },
+            {
+              "document_title": "Projeto FECCI — site oficial",
+              "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/#referencias",
+              "page": null,
+              "section": "referencias",
+              "source_checked_at": "2026-10-04"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lavicza",
+      "authors": [
+        "Zsolt Lavicza",
+        "Celina Aparecida Almeida Pereira Abar",
+        "Mathias Tejera"
+      ],
+      "year": 2023,
+      "year_basis": "Ano utilizado na citação do texto do projeto; variantes da bibliografia são informadas separadamente.",
+      "work": "O pensamento geométrico espacial e sua articulação com a visualização e a manipulação de objetos em 3D",
+      "concept_used": {
+        "id": "lavicza-concept",
+        "content": "Modelagem tridimensional e manipulação de objetos 3D para raciocínio espacial e visualização geométrica.",
+        "status": "context",
+        "provenance": [
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 2,
+            "section": "Encaminhamento metodológico",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 3,
+            "section": "Encaminhamento metodológico",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Projeto FECCI — site oficial",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/#fundamentacao",
+            "page": null,
+            "section": "fundamentacao",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 5,
+            "section": "Referências",
+            "source_checked_at": "2026-10-04"
+          }
+        ]
+      },
+      "contribution": {
+        "id": "lavicza-contribution",
+        "content": "O estudo é citado entre os pressupostos que subsidiaram a organização das atividades; o site destaca também a importância de orientação guiada.",
+        "status": "context",
+        "provenance": [
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 2,
+            "section": "Encaminhamento metodológico",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 3,
+            "section": "Encaminhamento metodológico",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Projeto FECCI — site oficial",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/#fundamentacao",
+            "page": null,
+            "section": "fundamentacao",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 5,
+            "section": "Referências",
+            "source_checked_at": "2026-10-04"
+          }
+        ]
+      },
+      "methodology_link": {
+        "id": "lavicza-link",
+        "content": "A metodologia propõe modelagem prática e recursos 3D a partir desses pressupostos. Não é publicada a reprodução do protocolo completo do estudo de terceiros.",
+        "status": "documented",
+        "provenance": [
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 2,
+            "section": "Encaminhamento metodológico",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 3,
+            "section": "Encaminhamento metodológico",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Projeto FECCI — site oficial",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/#fundamentacao",
+            "page": null,
+            "section": "fundamentacao",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 5,
+            "section": "Referências",
+            "source_checked_at": "2026-10-04"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+          "page": 2,
+          "section": "Encaminhamento metodológico",
+          "source_checked_at": "2026-10-04"
+        },
+        {
+          "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+          "page": 3,
+          "section": "Encaminhamento metodológico",
+          "source_checked_at": "2026-10-04"
+        },
+        {
+          "document_title": "Projeto FECCI — site oficial",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/#fundamentacao",
+          "page": null,
+          "section": "fundamentacao",
+          "source_checked_at": "2026-10-04"
+        },
+        {
+          "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+          "page": 5,
+          "section": "Referências",
+          "source_checked_at": "2026-10-04"
+        }
+      ],
+      "citation_variants": [
+        {
+          "context": "Referências do artigo do projeto, página 5",
+          "year": 2023,
+          "citation": "LAVICZA, Z.; ABAR, C. A. A. P.; TEJERA, M. O pensamento geométrico espacial e sua articulação com a visualização e a manipulação de objetos em 3D. Educação Matemática Pesquisa, v. 25, n. 2, p. 258–277, 2023. DOI: 10.23925/1983-3156.2023v25i2p258-277.",
+          "provenance": [
+            {
+              "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+              "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+              "page": 5,
+              "section": "Referências",
+              "source_checked_at": "2026-10-04"
+            }
+          ]
+        },
+        {
+          "context": "Referências do site oficial",
+          "year": 2023,
+          "citation": "LAVICZA, Zsolt; ABAR, Celina Aparecida Almeida Pereira; TEJERA, Mathias. O pensamento geométrico espacial e sua articulação com a visualização e a manipulação de objetos em 3D. Educação Matemática Pesquisa, São Paulo, v. 25, n. 2, p. 258–277, 2023. DOI: 10.23925/1983-3156.2023v25i2p258-277.",
+          "provenance": [
+            {
+              "document_title": "Projeto FECCI — site oficial",
+              "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/#referencias",
+              "page": null,
+              "section": "referencias",
+              "source_checked_at": "2026-10-04"
+            }
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "lipson-kurman",
+      "authors": [
+        "Lipson, H.",
+        "Kurman, M."
+      ],
+      "year": 2013,
+      "year_basis": "Ano utilizado na citação do texto do projeto; variantes da bibliografia são informadas separadamente.",
+      "work": "Fabricated: the new world of 3D printing",
+      "concept_used": {
+        "id": "lipson-kurman-concept",
+        "content": "Compreensão integrada de design, engenharia e fabricação digital e desenvolvimento de competências técnicas e criativas.",
+        "status": "context",
+        "provenance": [
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 2,
+            "section": "Introdução",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 5,
+            "section": "Referências",
+            "source_checked_at": "2026-10-04"
+          }
+        ]
+      },
+      "contribution": {
+        "id": "lipson-kurman-contribution",
+        "content": "A introdução relaciona a utilização da tecnologia a competências técnicas e criativas por meio dessa referência.",
+        "status": "context",
+        "provenance": [
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 2,
+            "section": "Introdução",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 5,
+            "section": "Referências",
+            "source_checked_at": "2026-10-04"
+          }
+        ]
+      },
+      "methodology_link": {
+        "id": "lipson-kurman-link",
+        "content": "Não há ligação explícita publicada entre essa obra e uma atividade específica do minicurso. Não foram acrescentados nomes completos dos autores ou resultados externos que não aparecem nas fontes do projeto.",
+        "status": "not_published",
+        "provenance": [
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 2,
+            "section": "Introdução",
+            "source_checked_at": "2026-10-04"
+          },
+          {
+            "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+            "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+            "page": 5,
+            "section": "Referências",
+            "source_checked_at": "2026-10-04"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+          "page": 2,
+          "section": "Introdução",
+          "source_checked_at": "2026-10-04"
+        },
+        {
+          "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+          "page": 5,
+          "section": "Referências",
+          "source_checked_at": "2026-10-04"
+        }
+      ],
+      "citation_variants": [
+        {
+          "context": "Referências do artigo do projeto, página 5",
+          "year": 2013,
+          "citation": "LIPSON, H.; KURMAN, M. Fabricated: the new world of 3D printing. Indianapolis: Wiley, 2013.",
+          "provenance": [
+            {
+              "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+              "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+              "page": 5,
+              "section": "Referências",
+              "source_checked_at": "2026-10-04"
+            }
+          ]
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "ambiguities": [
+    {
+      "id": "evangelista-conflict",
+      "content": "O corpo do artigo cita 2021. A bibliografia do mesmo PDF registra 2026, volume 11 e DOI 10.26512/2446-564X1112026; o site registra 2021, volume 7 e DOI 10.26512/2446-564X2021e35946. Nenhuma variante foi corrigida ou tratada como atualização confirmada.",
+      "status": "ambiguous",
+      "provenance": [
+        {
+          "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+          "page": 2,
+          "section": "Encaminhamento metodológico",
+          "source_checked_at": "2026-10-04"
+        },
+        {
+          "document_title": "Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/artigos/DESENVOLVIMENTO%20DE%20COMPET%C3%8ANCIAS%20STEAM%20POR%20MEIO%20DE%20UM%20MINICURSO%20DE%20PROTOTIPAGEM%203D%20UTILIZANDO%20O%20AUTODESK%20FUSION%20360.pdf",
+          "page": 5,
+          "section": "Referências",
+          "source_checked_at": "2026-10-04"
+        },
+        {
+          "document_title": "Projeto FECCI — site oficial",
+          "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/#referencias",
+          "page": null,
+          "section": "referencias",
+          "source_checked_at": "2026-10-04"
+        }
+      ]
+    }
+  ]
+}

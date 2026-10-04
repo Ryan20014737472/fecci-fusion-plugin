@@ -43,13 +43,14 @@ function post(body, extraHeaders = {}) {
   });
 }
 
-test('cliente oficial inicializa e descobre as sete ferramentas de leitura', async (t) => {
+test('cliente oficial inicializa e descobre as onze ferramentas de leitura', async (t) => {
   const client = await connectClient(t);
   assert.equal(client.getServerVersion().title, 'FECCI Fusion 360');
   const { tools } = await client.listTools();
   assert.deepEqual(tools.map((tool) => tool.name), [
     'get_project_info', 'search_project', 'get_team', 'get_references',
     'get_workshop_info', 'get_results', 'get_project_timeline',
+    'get_project_documents', 'search_documents', 'get_methodology', 'get_theoretical_foundation',
   ]);
   assert.equal(tools[0].annotations.readOnlyHint, true);
   assert.equal(tools[0].annotations.destructiveHint, false);
@@ -172,5 +173,5 @@ test('falha na leitura retorna isError sem expor detalhes internos', async (t) =
   assert.equal(result.isError, true);
   assert.equal(loggedError, true);
   assert.doesNotMatch(JSON.stringify(result), /detalhe-interno-nao-publico/);
-  assert.equal((await client.listTools()).tools.length, 7);
+  assert.equal((await client.listTools()).tools.length, 11);
 });

@@ -1,15 +1,16 @@
 # FECCI Fusion 360 — servidor MCP
 
-V2 do servidor MCP para o plugin **FECCI Fusion 360** do ChatGPT.
+V3 do servidor MCP para o plugin **FECCI Fusion 360** do ChatGPT.
 Disponibiliza informações públicas do [Projeto FECCI](https://ryan20014737472.github.io/Fecci-fusion-360/)
 sobre Autodesk Fusion 360, modelagem e prototipagem 3D, educação, Cultura Maker e STEAM.
 
-Esta versão está na branch **`feat/mcp-v2`**, criada a partir da `main`, e adiciona
-seis ferramentas. O contrato, os dados e as respostas de **`get_project_info`**
-continuam iguais aos da V1. Como a preparação de produção ainda estava em
-`feat/render-deploy`, seus arquivos de servidor e configuração foram preservados
-nesta branch. O Blueprint continua apontando para `feat/render-deploy`, com
-deploy automático desligado; a V2 não ativa uma atualização no Render.
+Esta versão está na branch **`feat/mcp-v3-documents`**, criada a partir da `main`
+estável da V2. Adiciona quatro ferramentas documentais e amplia a base consultada
+por `search_project`, preservando sua entrada e seu esquema de resposta.
+As definições das sete ferramentas V2 permanecem iguais; as respostas dos seis
+conjuntos especializados, incluindo **`get_project_info`**, também permanecem
+exatamente iguais. Os arquivos de produção e o Blueprint do Render não mudam.
+Publicar esta branch não faz merge nem deploy.
 
 Implementado em JavaScript com Node.js, Express e o SDK oficial
 [`@modelcontextprotocol/sdk`](https://github.com/modelcontextprotocol/typescript-sdk).
@@ -26,7 +27,7 @@ das dependências usadas nos testes.
 ```bash
 git clone https://github.com/Ryan20014737472/fecci-fusion-plugin.git
 cd fecci-fusion-plugin
-git switch feat/mcp-v2
+git switch feat/mcp-v3-documents
 npm ci
 ```
 
@@ -93,16 +94,16 @@ ou acrescente `127.0.0.1` em `ALLOWED_HOSTS`.
 
 ## Ferramentas disponíveis
 
-Todas as sete ferramentas são somente leitura. Declaram `readOnlyHint: true`,
+Todas as onze ferramentas são somente leitura. Declaram `readOnlyHint: true`,
 `destructiveHint: false`, `idempotentHint: true` e `openWorldHint: false`, pois
 consultam arquivos locais verificados. Os esquemas de entrada e saída usam Zod;
 campos de entrada não previstos são rejeitados.
 
 A resposta contém `structuredContent`, validado por um `outputSchema` Zod, e
 uma representação do mesmo JSON em `content` para clientes que leem texto.
-Todos os conjuntos contêm `sources` (seção e URL oficial) e `source_checked_at`.
-Os novos conjuntos incluem `verification_scope` e `not_published`, explicitando
-o alcance da verificação e informações ausentes na página consultada.
+Todos os conjuntos contêm fontes e `source_checked_at`. Na V2, as fontes usam
+`section` e `url`. Na V3, a proveniência documental identifica também documento,
+página e seção; informações não verificadas e divergências ficam explícitas.
 
 | Ferramenta | Argumentos | Conteúdo retornado |
 | --- | --- | --- |
@@ -113,6 +114,10 @@ o alcance da verificação e informações ausentes na página consultada.
 | `get_workshop_info` | `{}` ou argumentos omitidos | Objetivo, contexto, público, duração em minutos, status, conteúdos ordenados, atividade prática, material de apoio, avaliação e continuidade. |
 | `get_results` | `{}` ou argumentos omitidos | `obtained_results`, `prepared_instruments`, `pending_steps`, objetivos ainda sem mensuração e status dos resultados quantitativos. |
 | `get_project_timeline` | `{}` ou argumentos omitidos | Etapas na sequência pública do diário, status `documented`/`planned`, datas e registros sem posição cronológica confirmada. |
+| `get_project_documents` | `{}` ou argumentos omitidos | Inventário de seis documentos com título, tipo, descrição, URL, páginas, data, disponibilidade e alcance da verificação. |
+| `search_documents` | `{"query":"extrusão","document_type":"support_material","limit":3}` | Trechos do corpus documental, com documento, página/seção, URL direta, status, escopo, `rank`, `score` e data. Filtro e limite opcionais. |
+| `get_methodology` | `{}` ou argumentos omitidos | Dez seções do método publicado, com proveniência e status por afirmação, limitações e divergências entre fontes. |
+| `get_theoretical_foundation` | `{}` ou argumentos omitidos | Seis referências do artigo: autores, ano, trabalho, conceito, contribuição e vínculo metodológico publicado; fontes e variantes bibliográficas. |
 
 ### `get_project_info`: contrato mantido
 
@@ -130,18 +135,18 @@ o alcance da verificação e informações ausentes na página consultada.
 O nome **FECCI Fusion 360** identifica o servidor/plugin; **Projeto FECCI** é o
 nome apresentado no site. Não foi atribuída uma expansão à sigla FECCI.
 
-### `search_project`: consulta textual local
+### Compatibilidade de `search_project`
 
 `query` é obrigatória: string de **1 a 200 caracteres após remover espaços
 externos**, contendo ao menos uma palavra ou número pesquisável. Não aceita
 somente pontuação ou palavras de ligação como `o e de para`. Não há parâmetro
 de limite, filtros adicionais nem acesso a URLs fornecidas pelo cliente.
 
-A busca ignora caixa e acentos, elimina palavras de ligação e exige todos os
-termos significativos no mesmo trecho. Aceita prefixos de pelo menos quatro
-caracteres. Correspondências no título e de frase recebem prioridade; empates
-usam o identificador do trecho, garantindo ordem estável. A busca é lexical e
-não interpreta sinônimos ou perguntas semanticamente.
+A busca continua usando os seis conjuntos da V2 e passa a incluir os 59 trechos
+documentais da V3. Ignora caixa e acentos, elimina palavras de ligação e exige
+todos os termos significativos no mesmo trecho. Aceita prefixos de pelo menos
+quatro caracteres. O cálculo anterior de relevância permanece igual; empates
+priorizam registros da V2 e depois o identificador. A busca é lexical.
 
 O resultado contém `query`, `match_count`, `results`, `message`, `sources` e
 `source_checked_at`. `match_count` informa o total antes do limite de 10 resultados.
@@ -150,58 +155,171 @@ entre os conjuntos consultados. Sem correspondência, `results` é `[]`,
 `match_count` é `0` e `message` informa explicitamente a ausência na base local.
 Uma consulta válida sem correspondência é uma resposta normal, sem `isError`.
 
-### Origem e atualização dos dados
+Os resultados documentais usam os mesmos campos V2: `id`, `title`, `content`,
+`sources` e `source_checked_at`. Documento, página, seção e URL direta aparecem
+em `title`/`content` e na descrição da fonte. PDFs usam `#page=N` na URL da fonte.
+Para o Borke, `sources.url` aponta para o link publicado no site (`#diario`), pois
+o schema V2 admite somente URLs desse domínio; o link direto do Canva permanece
+em `content`. Não foram acrescentados campos ao contrato antigo.
 
-Os arquivos `data/*.json` são um **retrato do site público verificado em 2026-10-03**.
-O servidor não acessa a internet a cada chamada e não afirma que os dados são
-atualizados em tempo real. A pesquisa consulta os mesmos conjuntos locais que
-as ferramentas especializadas. A verificação desta versão cobre o texto e os
-links da página oficial; PDFs e páginas externas são oferecidos como recursos,
-sem extração de fatos adicionais de seu conteúdo.
+### `search_documents`: parâmetros e ranking
 
-As fontes do retrato são:
-
-| Informação | Seção do site |
+| Parâmetro | Regra |
 | --- | --- |
-| Nome, título e edição | Início e rodapé. |
-| Descrição e objetivo | `#projeto` e `#artigo-fecci`. |
-| Áreas abordadas e visualização espacial | `#projeto`, `#fundamentacao` e `#minicurso`. |
-| Contexto educacional | `#artigo-fecci` e rodapé. |
-| Duração de 90 minutos, público de 15 a 18 anos e atividade prática | `#minicurso`. |
-| Guia de apoio e link público do PDF | `#material`. |
-| Capacitação-piloto concluída e indicadores quantitativos ainda pendentes | `#resultados`. |
-| Próxima etapa de aplicação e avaliação | `#diario`. |
-| Participantes e responsabilidades | `#equipe`; orientação e mentoria em `#artigo-fecci` e `#resultados`. |
-| Referências bibliográficas, citações e DOI | `#referencias` e `#fundamentacao`. |
-| Sequência pública do diário Borke | `#diario`. |
+| `query` | Obrigatória; mesmas regras de texto de `search_project`: 1 a 200 caracteres após trim e pelo menos um termo pesquisável. |
+| `document_type` | Opcional: `project_article`, `support_material`, `project_journal` ou `bibliographic_reference`. |
+| `limit` | Opcional; inteiro entre 1 e 10. Padrão: 5. |
 
-O retrato mantém a distinção publicada no site entre a capacitação-piloto já
-realizada e a futura aplicação às turmas com análise dos questionários. Não
-apresenta resultados esperados nem resultados de artigos de terceiros como
-resultados medidos do projeto.
+A busca consulta exclusivamente `data/document-corpus.json`. Todos os termos
+significativos devem ocorrer no título ou conteúdo do mesmo trecho. A
+normalização remove acentos, ignora caixa e palavras de ligação em português.
+Prefixos são aceitos a partir de quatro caracteres; não há interpretação de
+sinônimos, busca semântica ou acesso à internet.
 
-As seguintes limitações foram mantidas explícitas:
+O ranking soma, por termo, 8 pontos por correspondência exata no título e 2 no
+conteúdo; prefixos recebem 4 e 1. A frase normalizada acrescenta 20 pontos no
+título e 5 no conteúdo. Um bônus de especificidade é
+`floor(32 × termos da consulta presentes no título / termos significativos do título)`.
+Empates usam o identificador do trecho. `score` expressa relevância lexical;
+`rank` começa em 1. Não representa confiança científica ou certeza de execução.
 
-- Os cartões da equipe usam nomes abreviados, enquanto o artigo lista nomes
-  completos. Esses contextos permanecem separados, sem atribuir identidades por inferência.
-- O diário não apresenta datas de calendário. Os eventos usam `date: null` e
-  `chronology_basis: "published_sequence"`. A conversa com a coordenação de
-  matemática não tem posição confirmada e fica em `undated_unordered_records`.
-- A disponibilização de 7 turmas é um registro de preparação para aplicação.
-  A aplicação e a avaliação aparecem como etapas previstas. Não há indicadores
-  quantitativos do FECCI publicados no resumo; estatísticas de artigos de
-  terceiros não são resultados do projeto.
-- Datas, inscrição, vagas e dimensões detalhadas da atividade não aparecem no
-  resumo consultado do minicurso. Não foram extraídas do PDF por suposição.
-- O Borke é descrito como em produção. O link público é mantido como recurso.
-  As citações bibliográficas seguem o texto publicado, sem correções por fontes externas.
+`match_count` informa o total antes do limite. Cada resultado conserva os cinco
+campos de proveniência, `status`, `scope` e eventual `additional_provenance` de
+passagens que atravessam páginas. Sem correspondência, retorna lista vazia e
+mensagem explícita. O filtro `bibliographic_reference` é válido, mas não encontra
+trechos nesta versão: esses PDFs foram inventariados, sem incorporar seu corpo.
 
-Para atualizar a base, verifique novamente as seções oficiais, edite apenas
-fatos confirmados no conjunto correspondente e atualize sua data e fontes.
-Execute `npm run check` e `npm test`. Os arquivos são lidos e validados em cada
-chamada; não há scraping. A fixture `test/fixtures/get-project-info-v1.json`
-registra o contrato e as respostas da V1 e protege sua compatibilidade: não
-atualize essa fixture apenas para fazer passar uma alteração incompatível.
+### Metodologia e fundamentação
+
+`get_methodology` organiza `sections` em `planning`, `preparation`,
+`target_audience`, `duration`, `lesson_organization`, `practical_activities`,
+`evaluation_instruments`, `application`, `analysis` e `limitations`. Cada seção
+contém `facts`, com texto, status e uma ou mais proveniências. `ambiguities` e
+`not_verified` conservam divergências e lacunas, sem resolvê-las por inferência.
+
+`get_theoretical_foundation` inclui Anderson, Autodesk, Chang/Melo/Silva,
+Evangelista/Oliveira, Lavicza/Abar/Tejera e Lipson/Kurman. Cada referência declara
+autores, ano e sua base, trabalho, `concept_used`, `contribution`,
+`methodology_link`, fontes e variantes de citação. Quando o projeto não relaciona
+a referência a uma etapa específica do minicurso, o vínculo é declarado como
+`not_published`. A bibliografia de três artigos retornada por `get_references`
+permanece igual à V2.
+
+## Base documental e proveniência
+
+A V3 é um retrato **verificado em 2026-10-04**. Os seis arquivos da V2 permanecem
+com seus dados e datas anteriores (**2026-10-03**). Nenhuma chamada MCP consulta
+PDFs, Canva ou páginas externas. Os quatro novos JSONs contêm sínteses factuais,
+sem PDFs, texto integral dos documentos ou dependências de extração em produção.
+
+| Arquivo | Papel |
+| --- | --- |
+| `data/documents.json` | Inventário, disponibilidade, páginas, método de verificação, escopo e checksums. |
+| `data/document-corpus.json` | Trechos curados pesquisáveis, status, escopo, proveniência e cobertura. |
+| `data/methodology.json` | Síntese das dez partes do método, com fontes por afirmação. |
+| `data/theoretical-foundation.json` | Referências, conceitos, contribuições, vínculos publicados e divergências de citação. |
+
+Os datasets têm `schema_version: 1`. `src/data/document-datasets.js` lê caminhos
+fixos, valida os schemas Zod e confere título, URL, data, páginas, identificadores
+e contagens contra o inventário. O registro central das ferramentas permanece
+em `src/tools/index.js`; os serviços de busca ficam em `src/search/`.
+
+### Documentos consultados e cobertura
+
+Todos os documentos foram encontrados pelos links atuais do site oficial.
+As URLs completas estão em `data/documents.json` e no retorno de
+`get_project_documents`.
+
+| Documento | Páginas verificadas | Conteúdo incorporado |
+| --- | --- | --- |
+| Artigo **Desenvolvimento de competências STEAM por meio de um minicurso de prototipagem 3D utilizando o Autodesk Fusion 360** | 5 páginas PDF | 28 trechos, cobrindo as 5 páginas. |
+| **Material de apoio — Oficina Fusion 360** | 7 páginas PDF | 22 trechos, cobrindo as 7 páginas; tabelas e infográficos das páginas 4–6 revisados visualmente. |
+| **Borke final**, pelo [link público do diário](https://canva.link/ino42l26d4v7d6u) | 11 páginas na ordem do design Canva | 9 trechos, em 6 páginas: 1, 2, 3, 4, 6 e 8. |
+| Evangelista/Oliveira — **Estudo das consequências da aplicação de impressoras 3D no ambiente escolar** | 20 páginas PDF | Disponibilidade e metadados; sem texto no corpus. |
+| Chang/Melo/Silva — **Manufatura aditiva e o ambiente maker: sinergia para transformar o ensino de desenho técnico e modelagem 3D** | 23 páginas PDF | Disponibilidade e metadados; sem texto no corpus. |
+| Lavicza/Abar/Tejera — **O pensamento geométrico espacial e sua articulação com a visualização e a manipulação de objetos em 3D** | 20 páginas PDF | Disponibilidade e metadados; sem texto no corpus. |
+
+O corpus contém **59 trechos de 3 documentos, cobrindo 18 páginas**. Foram
+consultadas todas as 12 páginas dos dois PDFs do próprio projeto. Os três PDFs
+bibliográficos adicionais somam 63 páginas e estão somente no inventário.
+A fundamentação registra o uso dessas referências publicado pelo próprio FECCI.
+
+O Borke pôde ser lido anonimamente no texto da resposta pública do Canva, com
+identificação de navegador atual; não foi necessária conta ou edição. Sua paginação é a ordem
+do design (`page_basis: "canva_design_order"`), não a de uma exportação PDF.
+Não foi obtida uma exportação PDF pública do diário. Fotografias, manuscritos,
+páginas sem texto suficiente e informações presentes somente em imagens não
+foram transcritos. `content_sha256` identifica os bytes dos PDFs; no diário,
+identifica a representação JSON dos textos extraídos, conforme `checksum_kind`.
+
+### Política de proveniência
+
+Todo trecho e toda afirmação documental guardam:
+
+```json
+{
+  "document_title": "Material de apoio — Oficina Fusion 360",
+  "source_url": "https://ryan20014737472.github.io/Fecci-fusion-360/assets/mat%C3%A9rial%20de%20apoio.pdf",
+  "page": 4,
+  "section": "Ferramentas utilizadas na oficina",
+  "source_checked_at": "2026-10-04"
+}
+```
+
+`page` e `section` são obrigatórios, aceitando `null` quando não disponíveis.
+Páginas são contadas a partir de 1. Seções identificadas por assunto de uma
+tabela ou lista não implicam numeração de seção no original. Fontes HTML usam
+página `null`. Passagens que atravessam páginas mantêm ambas as referências.
+O inventário distingue `availability: "available"` de `"not_verifiable"` e
+informa `corpus_included`; estar disponível não significa ter texto indexado.
+
+O campo `status` separa `documented`, `planned`, `expected`, `context`,
+`ambiguous` e `not_published`. `scope` diferencia projeto, material didático,
+atividades gerais do clube e referências de terceiros. A capacitação-piloto
+é preparação documentada; a aplicação às turmas e a comparação pré/pós
+continuam planejadas. Competências, modelos funcionais e interesse por
+carreiras descritos como expectativas não são resultados medidos do FECCI.
+
+### Divergências e exclusões deliberadas
+
+- O artigo menciona estudantes de outros colégios na página 2 e turmas do CEP
+  na página 3. As duas formulações permanecem com suas fontes.
+- O artigo prevê ao menos cinco turmas; o site registra sete turmas conseguidas
+  para aplicação. Esses números não comprovam atendimento realizado nem
+  permitem ordenar as atualizações.
+- A metodologia do artigo descreve materiais em preparação; seus resultados
+  parciais descrevem materiais desenvolvidos. Os contextos são conservados.
+- Evangelista/Oliveira aparece como **2021** no corpo do artigo e no site, mas
+  como **2026** na bibliografia do PDF, com volume e DOI diferentes. Todas as
+  variantes ficam explícitas; nenhuma foi corrigida por uma fonte externa.
+- O site descreve o Borke em produção; o design se chama **Borke final**. Esse
+  título não comprova conclusão do minicurso. Datas como `09-03` e `13-04`
+  permanecem sem ano. O resumo de `get_project_timeline` não foi alterado.
+- Medidas ilustradas no guia não viraram dimensões obrigatórias da peça.
+  O estilo de navegação Tinkercad citado no material não comprova a aplicação
+  completa às turmas. Atalhos conservam a ressalva do estilo configurado.
+- Não foram incorporados contatos pessoais do artigo, transcrições de imagens,
+  nomes expandidos por inferência, o significado da sigla FECCI, datas de
+  aplicação, número de alunos atendidos ou resultados quantitativos ausentes.
+- Estatísticas de pesquisas bibliográficas não foram atribuídas ao FECCI.
+  Os vínculos metodológicos específicos de Anderson e Lipson/Kurman não estão
+  publicados no artigo e são declarados como ausentes.
+
+### Atualizar os dados
+
+1. Verifique novamente o site e os documentos atualmente vinculados por ele.
+   Faça downloads e extração fora do repositório; confira páginas e checksum.
+2. Leia os PDFs e revise visualmente tabelas/infográficos. Para o diário, use
+   somente conteúdo público verificável; registre a base da paginação.
+3. Edite apenas trechos e afirmações confirmados. Preencha os cinco campos de
+   proveniência, mantenha datas de verificação coerentes e classifique estágio
+   e escopo. Preserve divergências e registre o que não pôde ser verificado.
+4. Atualize inventário, corpus, sínteses e contagens de cobertura em conjunto.
+   Mantenha apenas trechos necessários; não versione PDFs ou respostas brutas
+   do Canva. O servidor não precisa de ferramentas de extração instaladas.
+5. Execute `npm test`, `npm run check` e `git diff --check`. Não atualize as
+   fixtures de compatibilidade para aceitar uma quebra da V1/V2. A expansão
+   de `search_project` mantém seu schema anterior.
 
 ## Testar o endpoint MCP
 
@@ -243,7 +361,7 @@ curl -sS http://127.0.0.1:3000/mcp \
   -d '{"jsonrpc":"2.0","id":2,"method":"tools/list"}'
 ```
 
-Resultado esperado: as sete ferramentas da tabela, com os esquemas de entrada,
+Resultado esperado: as onze ferramentas da tabela, com os esquemas de entrada,
 saída e as anotações de leitura.
 
 ### 4. Consultar o projeto
@@ -286,11 +404,14 @@ Exemplos de `params` para `method: "tools/call"`, usando os mesmos cabeçalhos:
 | Minicurso de 90 minutos | `{"name":"get_workshop_info","arguments":{}}` |
 | Evidências e resultados pendentes | `{"name":"get_results","arguments":{}}` |
 | Sequência do diário público | `{"name":"get_project_timeline","arguments":{}}` |
+| Documentos públicos e disponibilidade | `{"name":"get_project_documents","arguments":{}}` |
+| Método publicado e seus estágios | `{"name":"get_methodology","arguments":{}}` |
+| Conceitos e referências do artigo | `{"name":"get_theoretical_foundation","arguments":{}}` |
 
 Para executar todos esses exemplos:
 
 ```bash
-for tool in get_team get_references get_workshop_info get_results get_project_timeline; do
+for tool in get_team get_references get_workshop_info get_results get_project_timeline get_project_documents get_methodology get_theoretical_foundation; do
   curl -sS http://127.0.0.1:3000/mcp \
     -H 'Content-Type: application/json' \
     -H 'Accept: application/json, text/event-stream' \
@@ -303,11 +424,31 @@ Essas ferramentas não recebem filtros ou identificadores. Argumentos extras
 geram `isError: true`. Falhas de leitura ou validação da base também geram
 `isError: true`, com mensagem pública genérica e sem detalhes internos.
 
+### 7. Pesquisar no corpus documental
+
+```bash
+curl -sS http://127.0.0.1:3000/mcp \
+  -H 'Content-Type: application/json' \
+  -H 'Accept: application/json, text/event-stream' \
+  -H 'MCP-Protocol-Version: 2025-11-25' \
+  -d '{"jsonrpc":"2.0","id":6,"method":"tools/call","params":{"name":"search_documents","arguments":{"query":"extrusão","document_type":"support_material","limit":3}}}'
+```
+
+Resultado esperado: a explicação de **Extrude/extrusão** no guia aparece antes
+de menções gerais ao comando. Os resultados incluem URL do PDF, página, seção,
+ranking e data. Exemplos adicionais de `params`:
+
+| Consulta | `params` |
+| --- | --- |
+| Metodologia do artigo | `{"name":"search_documents","arguments":{"query":"questionários","document_type":"project_article"}}` |
+| Registro público do clube | `{"name":"search_documents","arguments":{"query":"Bordo Maker","document_type":"project_journal","limit":1}}` |
+| Sem correspondência | `{"name":"search_documents","arguments":{"query":"termozxyinexistente"}}` |
+
 ### Testes automatizados
 
 ```bash
-npm run check
 npm test
+npm run check
 ```
 
 Os testes usam `node:test` e o cliente oficial do SDK em portas locais temporárias.
@@ -320,8 +461,13 @@ de `get_project_info` continua igual aos dados verificados do projeto. A suíte 
 compara a definição e as respostas completas da V1, valida os JSON Schemas
 anunciados com o validador do SDK, rejeita argumentos inválidos, verifica fontes,
 datas, falhas de leitura, busca sem correspondência, ordenação e limite de
-resultados. Chamadas repetidas verificam idempotência e os hashes dos arquivos
-de dados confirmam que as ferramentas não os modificam. `npm run check` verifica
+resultados. A suíte V3 verifica as onze ferramentas, hashes dos contratos e
+respostas V2, compatibilidade com o schema antigo de `search_project`, filtros,
+limites, ranking e normalização de acentos. Também rejeita fatos sem fonte,
+páginas inexistentes, inconsistências de cobertura e regressões que convertam
+aplicação planejada ou resultados esperados em execução e resultados obtidos.
+Chamadas repetidas verificam idempotência e os hashes dos arquivos de dados
+confirmam que as ferramentas não os modificam. `npm run check` verifica
 a sintaxe de todos os arquivos JavaScript do servidor, scripts e testes.
 Não precisam do site disponível nem de credenciais.
 
@@ -354,7 +500,11 @@ ambiente, caminhos locais, memória ou logs.
 │   ├── references.json           # Bibliografia e recursos públicos
 │   ├── workshop-info.json        # Minicurso e material de apoio
 │   ├── results.json              # Evidências obtidas e etapas pendentes
-│   └── project-timeline.json     # Sequência do diário, sem datas inferidas
+│   ├── project-timeline.json     # Resumo V2 do diário preservado
+│   ├── documents.json            # Inventário documental V3
+│   ├── document-corpus.json      # Trechos curados pesquisáveis
+│   ├── methodology.json          # Método publicado e proveniência
+│   └── theoretical-foundation.json # Conceitos, referências e variantes
 ├── scripts/
 │   └── check.js                 # Verificação de sintaxe de todos os JS
 ├── src/
@@ -364,9 +514,13 @@ ambiente, caminhos locais, memória ou logs.
 │   ├── data/
 │   │   ├── project-info.js       # Carregamento e esquema V1 preservados
 │   │   ├── project-schemas.js    # Esquemas Zod dos conjuntos V2
-│   │   └── project-datasets.js   # Carregamento dos JSON locais
+│   │   ├── project-datasets.js   # Carregamento dos JSON V2
+│   │   ├── document-schemas.js   # Schemas Zod documentais V3
+│   │   └── document-datasets.js  # Leitura e integridade da proveniência
 │   ├── search/
-│   │   └── project-search.js     # Índice de trechos e busca lexical
+│   │   ├── project-search.js     # Busca V2 com registros V3 adicionais
+│   │   ├── document-search.js    # Ranking lexical do corpus documental
+│   │   └── project-document-search.js # Adaptador para o contrato V2
 │   └── tools/
 │       ├── index.js             # Registro central das ferramentas
 │       ├── get-project-info.js  # Ferramenta V1 preservada
@@ -376,7 +530,11 @@ ambiente, caminhos locais, memória ou logs.
 │       ├── get-references.js    # Bibliografia e recursos
 │       ├── get-workshop-info.js # Minicurso
 │       ├── get-results.js       # Resultados e pendências
-│       └── get-project-timeline.js # Diário e etapas públicas
+│       ├── get-project-timeline.js # Diário e etapas públicas V2
+│       ├── get-project-documents.js # Inventário V3
+│       ├── search-documents.js   # Pesquisa documental V3
+│       ├── get-methodology.js    # Metodologia V3
+│       └── get-theoretical-foundation.js # Fundamentação V3
 └── test/
     ├── config.test.js           # Configurações válidas e inválidas
     ├── mcp.test.js              # Integração HTTP com cliente oficial
@@ -384,8 +542,11 @@ ambiente, caminhos locais, memória ou logs.
     ├── server.test.js           # Processo real, porta, bind e SIGTERM
     ├── search.test.js           # Busca, relevância, limite e proveniência
     ├── v2-tools.test.js         # Seis ferramentas, schemas e compatibilidade V1
+    ├── v3-tools.test.js         # Onze ferramentas e compatibilidade V2
+    ├── document-data.test.js    # Proveniência e regressões conceituais
     └── fixtures/
-        └── get-project-info-v1.json # Contrato e respostas reais da V1
+        ├── get-project-info-v1.json # Contrato e respostas V1 congelados
+        └── v2-contracts.json    # Hashes dos contratos e respostas V2
 ```
 
 ### Decisões de transporte e tratamento de erros
@@ -411,21 +572,21 @@ Para adicionar ferramentas, crie um módulo em `src/tools/`, defina seu esquema,
 anotações e função de leitura, e registre-o em `src/tools/index.js`. Mantenha
 a obtenção de dados em `src/data/` e suas fontes explícitas.
 
-As seis ferramentas previstas na V1 já estão implementadas. Novos conjuntos devem
-declarar fonte oficial, data de verificação e informações ausentes; use
+As ferramentas V1, V2 e as quatro documentais V3 estão implementadas.
+Novos conjuntos devem declarar fonte oficial, data e informações ausentes; use
 `registerReadOnlyTool` para manter o mesmo contrato de resposta e erros. Mantenha
-o módulo e os dados da V1 preservados para não alterar seu comportamento.
+os módulos e dados existentes preservados para não alterar seus contratos.
 
 ## Deploy público no Render
 
 `render.yaml` prepara um **Web Service Node.js**, usando a branch
 **`feat/render-deploy`**, com estas configurações:
 
-O serviço existente e essas configurações permanecem preservados na V2.
-As instruções abaixo servem como referência para provisionamento; publicar
-`feat/mcp-v2` no GitHub não muda a branch do serviço nem executa deploy.
-Uma futura publicação da V2 exige selecionar explicitamente a versão no Render
-e executar um deploy manual.
+O serviço existente e os arquivos de produção permanecem preservados na V3.
+O campo `branch` do Blueprint continua com seu valor anterior; ele não comprova
+qual branch foi selecionada manualmente no serviço já existente. As instruções
+abaixo são referência para provisionamento futuro. Publicar
+`feat/mcp-v3-documents` no GitHub não altera o serviço nem executa deploy.
 
 | Campo | Valor |
 | --- | --- |
@@ -460,7 +621,7 @@ Revise o plano Free e a região antes de criar o serviço.
    GitHub que tem acesso ao repositório `Ryan20014737472/fecci-fusion-plugin`.
 2. Selecione **New > Blueprint**, escolha esse repositório e a branch
    **`feat/render-deploy`**, e use o arquivo **`render.yaml`** na raiz. Não selecione
-   `main` nesta preparação: a configuração de deploy está na nova branch.
+   a V3 para produção nesta preparação. A branch de deploy existente foi preservada.
 3. Revise o serviço, o plano Free e a região; confirme a criação. Não há
    credenciais da aplicação para preencher. O Blueprint define as três variáveis
    listadas acima; o Render fornece `PORT` e `RENDER_EXTERNAL_HOSTNAME`.
@@ -522,7 +683,8 @@ O deploy usa dependências fixadas no lockfile, corpo de requisição limitado a
 por `SIGTERM`. `get_project_info`, seu esquema e seus dados permanecem iguais.
 Sem autenticação, o endpoint público oferece informações públicas do projeto.
 `/health` é um teste de resposta HTTP; a chamada da ferramenta verifica o conteúdo
-MCP. A disponibilidade real do HTTPS só pode ser confirmada após criar o serviço.
+MCP. A disponibilidade de uma versão específica deve ser confirmada no serviço
+após seu deploy; os testes locais não publicam a V3.
 
 Nenhum token, senha ou chave é necessário no repositório. `.env` está excluído
 pelo `.gitignore`; configurações particulares devem ficar no Dashboard do Render.
@@ -536,12 +698,11 @@ Referências: [Web Services](https://render.com/docs/web-services),
 
 ## Conexão ao ChatGPT
 
-Depois do deploy, cadastre a URL HTTPS real terminada em **`/mcp`** no conector/plugin
-do ChatGPT. O endpoint `/health` serve para monitoramento. Esta preparação publica
-os arquivos de deploy no GitHub; a criação do serviço no Render e o cadastro no
-ChatGPT são etapas manuais. O serviço já em produção continua com a versão
-selecionada no Render; as seis ferramentas novas estarão disponíveis publicamente
-somente após uma publicação futura da V2. Esta alteração não faz deploy.
+O conector/plugin do ChatGPT utiliza a URL HTTPS terminada em **`/mcp`**.
+O endpoint `/health` serve para monitoramento. O serviço já em produção continua
+com a versão selecionada no Render; as quatro ferramentas documentais estarão
+disponíveis publicamente somente após uma publicação futura autorizada.
+Esta alteração publica apenas a branch de desenvolvimento, sem merge ou deploy.
 
 **GitHub Pages serve arquivos estáticos e não executa este servidor Node.js**;
 o site público do projeto permanece a fonte das informações.

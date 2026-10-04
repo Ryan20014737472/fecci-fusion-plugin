@@ -89,12 +89,13 @@ function wordScore(tokens, term, exactWeight, prefixWeight) {
   return 0;
 }
 
-export function searchProject(query, base) {
+export function searchProject(query, base, documentRecords = []) {
   const terms = queryTerms(query);
   if (!terms.length) throw new Error('Consulta sem termos pesquisáveis.');
-  const documents = buildSearchDocuments(base);
+  const legacyDocuments = buildSearchDocuments(base);
+  const documents = [...legacyDocuments, ...documentRecords];
   const phrase = normalize(query);
-  const matches = documents.flatMap((document) => {
+  const matches = documents.flatMap((document, index) => {
     const titleTokens = new Set(words(document.title));
     const bodyTokens = new Set(words(document.content));
     const scores = terms.map((term) => wordScore(titleTokens, term, 8, 4) + wordScore(bodyTokens, term, 2, 1));
@@ -102,8 +103,9 @@ export function searchProject(query, base) {
     const score = scores.reduce((sum, value) => sum + value, 0) +
       (normalize(document.title).includes(phrase) ? 20 : 0) +
       (normalize(document.content).includes(phrase) ? 5 : 0);
-    return [{ document, score }];
-  }).sort((a, b) => b.score - a.score || (a.document.id < b.document.id ? -1 : a.document.id > b.document.id ? 1 : 0));
+    return [{ document, score, legacy: index < legacyDocuments.length }];
+  }).sort((a, b) => b.score - a.score || Number(b.legacy) - Number(a.legacy) ||
+    (a.document.id < b.document.id ? -1 : a.document.id > b.document.id ? 1 : 0));
 
   const datasets = Object.values(base);
   return {
@@ -113,7 +115,7 @@ export function searchProject(query, base) {
     message: matches.length
       ? `Foram encontrados ${matches.length} trechos na base pública local; são retornados até 10, em ordem de relevância.`
       : 'Nenhuma informação correspondente à consulta foi encontrada na base pública local verificada.',
-    source_checked_at: datasets.map((dataset) => dataset.source_checked_at).sort()[0],
-    sources: uniqueSources(datasets.flatMap((dataset) => dataset.sources)),
+    source_checked_at: [...datasets, ...documentRecords].map((dataset) => dataset.source_checked_at).sort()[0],
+    sources: uniqueSources([...datasets, ...documentRecords].flatMap((dataset) => dataset.sources)),
   };
 }
